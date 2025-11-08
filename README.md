@@ -13,8 +13,20 @@
     <img src="https://github.com/Dezirae-Stark.png" width="45" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/desirae-stark">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="45" style="border-radius:50%" alt="LinkedIn"/>
+  <a href="https://x.com/DesiraeStark91">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" width="45" style="border-radius:50%" alt="X (Twitter)"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://t.me/randoknotty">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="45" style="border-radius:50%" alt="Telegram"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.reddit.com/u/Legal_Break_4789">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" width="45" style="border-radius:50%" alt="Reddit"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.tumblr.com/desiraeqos">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111736.png" width="45" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;
   <a href="mailto:clockwork.halo@tutanota.de">
@@ -135,12 +147,24 @@ A privacy-first communications platform with integrated waveform cryptography an
 ## 🌐 Connect With Me
 
 <p align="center">
-  <a href="https://github.com/Dezirae-Stark" title="GitHub: Dezirae-Stark">
+  <a href="https://github.com/Dezirae-Stark" title="GitHub: @Dezirae-Stark">
     <img src="https://github.com/Dezirae-Stark.png" width="50" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/desirae-stark" title="LinkedIn: Desirae Stark">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="50" style="border-radius:50%" alt="LinkedIn"/>
+  <a href="https://x.com/DesiraeStark91" title="X (Twitter): @DesiraeStark91">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" width="50" style="border-radius:50%" alt="X (Twitter)"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://t.me/randoknotty" title="Telegram: @randoknotty">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="50" style="border-radius:50%" alt="Telegram"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.reddit.com/u/Legal_Break_4789" title="Reddit: u/Legal_Break_4789">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" width="50" style="border-radius:50%" alt="Reddit"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.tumblr.com/desiraeqos" title="Tumblr: @desiraeqos">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111736.png" width="50" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="mailto:clockwork.halo@tutanota.de" title="Email: clockwork.halo@tutanota.de">
