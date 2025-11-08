@@ -1,6 +1,6 @@
 <div align="center">
 
-# Desirae Ann Stark
+# Dezirae Stark
 
 **Research & Development Engineer | Trading Ecosystems**
 **First Sterling Capital, LLC**
