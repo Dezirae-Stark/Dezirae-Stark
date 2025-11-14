@@ -26,11 +26,11 @@
   </a>
   &nbsp;&nbsp;
   <a href="https://www.tumblr.com/desiraeqos">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111736.png" width="45" style="border-radius:50%" alt="Tumblr"/>
+    <img src="assets/tumblr-logo.png" width="45" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;
   <a href="mailto:clockwork.halo@tutanota.de">
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="45" style="border-radius:50%" alt="Email"/>
+    <img src="assets/tutanota-logo.png" width="45" style="border-radius:50%" alt="Email"/>
   </a>
 </p>
 
@@ -164,11 +164,11 @@ A privacy-first communications platform with integrated waveform cryptography an
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://www.tumblr.com/desiraeqos" title="Tumblr: @desiraeqos">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111736.png" width="50" style="border-radius:50%" alt="Tumblr"/>
+    <img src="assets/tumblr-logo.png" width="50" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="mailto:clockwork.halo@tutanota.de" title="Email: clockwork.halo@tutanota.de">
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="50" style="border-radius:50%" alt="Email"/>
+    <img src="assets/tutanota-logo.png" width="50" style="border-radius:50%" alt="Email"/>
   </a>
 </p>
 
