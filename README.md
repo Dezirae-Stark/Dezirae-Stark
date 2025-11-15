@@ -25,7 +25,7 @@
     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" width="45" style="border-radius:50%" alt="Reddit"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://www.tumblr.com/desiraeqos">
+  <a href="https://www.tumblr.com/qwamos">
     <img src="assets/tumblr-logo.png" width="45" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;
@@ -163,7 +163,7 @@ A privacy-first communications platform with integrated waveform cryptography an
     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" width="50" style="border-radius:50%" alt="Reddit"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.tumblr.com/desiraeqos" title="Tumblr: @desiraeqos">
+  <a href="https://www.tumblr.com/qwamos" title="Tumblr: @desiraeqos">
     <img src="assets/tumblr-logo.png" width="50" style="border-radius:50%" alt="Tumblr"/>
   </a>
   &nbsp;&nbsp;&nbsp;
