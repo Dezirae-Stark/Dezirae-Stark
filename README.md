@@ -7,11 +7,10 @@
 
 <br>
 
-<!-- Profile Video -->
-<video width="100%" controls autoplay loop muted>
-  <source src="assets/profile-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<!-- Profile Video - Click to Play -->
+[![Profile Video](https://img.shields.io/badge/▶_Watch_Profile_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/Dezirae-Stark/Dezirae-Stark/raw/master/assets/profile-video.mp4)
+
+https://github.com/Dezirae-Stark/Dezirae-Stark/raw/master/assets/profile-video.mp4
 
 <br>
 
@@ -21,7 +20,7 @@
     <img src="https://github.com/Dezirae-Stark.png" width="45" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://discord.gg/YOUR_DISCORD_INVITE">
+  <a href="https://discord.gg/bR82Pfsd">
     <img src="assets/discord-logo.png" width="45" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;
@@ -89,11 +88,20 @@ With a focus on **building resilient, future-proof ecosystems**, I design system
 ### [**QWAMOS**](https://github.com/Dezirae-Stark/QWAMOS) – Qubes Whonix Advanced Mobile Operating System
 A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, Kyber-1024 encryption, multi-AI orchestration (M0-M5), and nation-state defense capabilities. Built from scratch for Android ARM64.
 
-**Status:** Production-ready | Phase 11 complete (Flutter Hypervisor UI)
+**Status:** Production-ready | **Phase 16 complete** (Secure Cluster Mode)
+**Version:** v2.0.1
 **Tech Stack:** Linux 6.6 LTS, KVM, U-Boot, Kyber-1024, ChaCha20-Poly1305, BLAKE3, Flutter
 **AI Team:** 6-model orchestration (Claude, GPT-4/o1, Gemini 2.5, Ollama local models)
 
-🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/YOUR_DISCORD_INVITE)
+**Security Modules:**
+- 🛡️ **Threat Detection**: ML-powered network anomaly, file system, and syscall monitoring
+- 📡 **Baseband Isolation**: IMSI catcher detection, SS7 filtering, Stingray protection
+- 🔇 **Side-Channel Mitigation**: Acoustic/ultrasonic attack prevention, sensor isolation
+- 📱 **Spyware Defense**: Pegasus-class zero-click exploit mitigation via VM isolation
+- 💬 **Message Security**: End-to-end PQC encryption, message interception prevention
+- 🚨 **Panic Protocols**: Duress profiles, emergency wipe gestures, dead-man switches
+
+🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/bR82Pfsd)
 
 ---
 
@@ -208,7 +216,7 @@ Each change proposal must pass multi-model consensus with P0/P1/P2 severity voti
     <img src="https://github.com/Dezirae-Stark.png" width="50" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://discord.gg/YOUR_DISCORD_INVITE" title="Discord: QWAMOS Community">
+  <a href="https://discord.gg/bR82Pfsd" title="Discord: QWAMOS Community">
     <img src="assets/discord-logo.png" width="50" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;&nbsp;
@@ -241,12 +249,14 @@ Each change proposal must pass multi-model consensus with P0/P1/P2 severity voti
 
 ## 📈 Recent Activity
 
-- 🎯 Configured M2 (Gemini Adversary) for full AI orchestration functionality
-- 🔒 Implemented encryption bypass attack mitigation in QWAMOS
+- 🎉 **Completed QWAMOS Phase 16** – Secure Cluster Mode (multi-device PQC mesh)
+- 🛡️ Built **ultrasonic attack mitigation** module for acoustic side-channel defense
+- 📱 Implemented **Pegasus-class spyware defense** via hypervisor VM isolation
+- 💬 Added **message capture prevention** with end-to-end PQC encryption
+- 🔇 Deployed **sensor isolation** for microphone/camera side-channel attacks
+- 📡 Enhanced **IMSI catcher & Stingray detection** in baseband isolation layer
+- 🤖 Configured M2 (Gemini Adversary) for full AI orchestration functionality
 - 🌐 Deployed QWAMOS website with cyberpunk-refined design
-- 🤖 Built complete Discord bot system with multi-language support
-- 📱 Added carrier security profiles and baseband hardening
-- 🚀 Completed QWAMOS Phase 11 (Flutter Hypervisor UI)
 
 <br>
 
