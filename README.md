@@ -7,10 +7,22 @@
 
 <br>
 
+<!-- Profile Video -->
+<video width="100%" controls autoplay loop muted>
+  <source src="assets/profile-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<br>
+
 <!-- Social Media Links -->
 <p align="center">
   <a href="https://github.com/Dezirae-Stark">
     <img src="https://github.com/Dezirae-Stark.png" width="45" style="border-radius:50%" alt="GitHub"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://discord.gg/YOUR_DISCORD_INVITE">
+    <img src="assets/discord-logo.png" width="45" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://x.com/DesiraeStark91">
@@ -64,6 +76,7 @@ With a focus on **building resilient, future-proof ecosystems**, I design system
 - 🛰️ **Advanced Cybersecurity & Encryption R&D**
 - 📱 **Mobile Hypervisor Architecture** (VM isolation, baseband hardening)
 - 🎯 **Nation-State Defense Systems** (anti-forensics, hardware kill switches, panic protocols)
+- 🤖 **AI Multi-Model Orchestration** (GPT-4, Gemini, Local LLMs for security hardening)
 
 <br>
 
@@ -74,10 +87,13 @@ With a focus on **building resilient, future-proof ecosystems**, I design system
 ## 🚀 Current Projects
 
 ### [**QWAMOS**](https://github.com/Dezirae-Stark/QWAMOS) – Qubes Whonix Advanced Mobile Operating System
-A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, Kyber-1024 encryption, triple-AI orchestration, and nation-state defense capabilities. Built from scratch for Android ARM64.
+A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, Kyber-1024 encryption, multi-AI orchestration (M0-M5), and nation-state defense capabilities. Built from scratch for Android ARM64.
 
 **Status:** Production-ready | Phase 11 complete (Flutter Hypervisor UI)
 **Tech Stack:** Linux 6.6 LTS, KVM, U-Boot, Kyber-1024, ChaCha20-Poly1305, BLAKE3, Flutter
+**AI Team:** 6-model orchestration (Claude, GPT-4/o1, Gemini 2.5, Ollama local models)
+
+🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/YOUR_DISCORD_INVITE)
 
 ---
 
@@ -94,6 +110,25 @@ A privacy-first communications platform with integrated waveform cryptography an
 
 **Status:** Confidential R&D
 **Tech Stack:** Kyber, ChaCha20, Ed448, custom protocol design
+
+<br>
+
+---
+
+<!-- Section: AI Orchestration System -->
+
+## 🤖 AI Multi-Model Orchestration
+
+I've developed a comprehensive AI orchestration system for QWAMOS with 6 specialized models:
+
+- **M0 (Orchestrator)** - Claude Code session coordination
+- **M1 (Deep Architect)** - OpenAI o1 for architecture & design decisions
+- **M2 (Adversary)** - Gemini 2.5 Flash for attack simulation & red team analysis
+- **M3 (Formalizer)** - Ollama (local) for static analysis & verification
+- **M4 (Doc Agent)** - GPT-4 for documentation & audit trails
+- **M5 (Security AI)** - Ollama (local) for security analysis & threat modeling
+
+Each change proposal must pass multi-model consensus with P0/P1/P2 severity voting.
 
 <br>
 
@@ -138,6 +173,28 @@ A privacy-first communications platform with integrated waveform cryptography an
 ![KVM](https://img.shields.io/badge/Virtualization-KVM%2FQEMU-orange)
 ![Tor](https://img.shields.io/badge/Privacy-Tor%2FI2P-7D4698?logo=tor-project&logoColor=white)
 
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?logo=google&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local_AI-black)
+
+<br>
+
+---
+
+<!-- Section: GitHub Stats -->
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dezirae-Stark&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=C9D1D9)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Dezirae-Stark&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=C9D1D9)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Dezirae-Stark&theme=radical&hide_border=true&background=0D1117&ring=F85D7F&fire=F8D866&currStreakLabel=C9D1D9)
+
+</div>
+
 <br>
 
 ---
@@ -149,6 +206,10 @@ A privacy-first communications platform with integrated waveform cryptography an
 <p align="center">
   <a href="https://github.com/Dezirae-Stark" title="GitHub: @Dezirae-Stark">
     <img src="https://github.com/Dezirae-Stark.png" width="50" style="border-radius:50%" alt="GitHub"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://discord.gg/YOUR_DISCORD_INVITE" title="Discord: QWAMOS Community">
+    <img src="assets/discord-logo.png" width="50" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;&nbsp;
   <a href="https://x.com/DesiraeStark91" title="X (Twitter): @DesiraeStark91">
@@ -176,10 +237,27 @@ A privacy-first communications platform with integrated waveform cryptography an
 
 ---
 
+<!-- Section: Latest Activity -->
+
+## 📈 Recent Activity
+
+- 🎯 Configured M2 (Gemini Adversary) for full AI orchestration functionality
+- 🔒 Implemented encryption bypass attack mitigation in QWAMOS
+- 🌐 Deployed QWAMOS website with cyberpunk-refined design
+- 🤖 Built complete Discord bot system with multi-language support
+- 📱 Added carrier security profiles and baseband hardening
+- 🚀 Completed QWAMOS Phase 11 (Flutter Hypervisor UI)
+
+<br>
+
+---
+
 <!-- Footer -->
 
 <div align="center">
 
-💡 *Desirae Ann Stark — First Sterling Capital LLC.*
+💡 *Desirae Ann Stark — First Sterling Capital LLC*
+
+🔐 *Post-Quantum Security | AI-Driven Innovation | Privacy-First Engineering*
 
 </div>
