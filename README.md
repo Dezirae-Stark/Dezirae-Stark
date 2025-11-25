@@ -7,10 +7,8 @@
 
 <br>
 
-<!-- Profile Video - Click to Play -->
-[![Profile Video](https://img.shields.io/badge/▶_Watch_Profile_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/Dezirae-Stark/Dezirae-Stark/raw/master/assets/profile-video.mp4)
-
-https://github.com/Dezirae-Stark/Dezirae-Stark/raw/master/assets/profile-video.mp4
+<!-- Profile Animation -->
+<img src="assets/Dezirae_Stark.gif" alt="Dezirae Stark" width="100%">
 
 <br>
 
