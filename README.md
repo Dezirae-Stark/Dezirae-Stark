@@ -193,11 +193,17 @@ Each change proposal must pass multi-model consensus with P0/P1/P2 severity voti
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dezirae-Stark&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866&text_color=C9D1D9)
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dezirae-Stark&theme=radical)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Dezirae-Stark&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=F85D7F&text_color=C9D1D9)
+<p>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Dezirae-Stark&theme=radical" alt="Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dezirae-Stark&theme=radical&utcOffset=-6" alt="Productive Time" />
+</p>
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Dezirae-Stark&theme=radical&hide_border=true&background=0D1117&ring=F85D7F&fire=F8D866&currStreakLabel=C9D1D9)
+<p>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Dezirae-Stark&theme=radical" alt="Top Languages by Repo" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dezirae-Stark&theme=radical" alt="Top Languages by Commit" />
+</p>
 
 </div>
 
