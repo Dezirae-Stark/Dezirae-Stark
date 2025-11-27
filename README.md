@@ -18,7 +18,7 @@
     <img src="https://github.com/Dezirae-Stark.png" width="45" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://discord.gg/bR82Pfsd">
+  <a href="https://discord.gg/B5nZwNT6yv">
     <img src="assets/discord-logo.png" width="45" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;
@@ -99,7 +99,7 @@ A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whon
 - 💬 **Message Security**: End-to-end PQC encryption, message interception prevention
 - 🚨 **Panic Protocols**: Duress profiles, emergency wipe gestures, dead-man switches
 
-🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/bR82Pfsd)
+🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/B5nZwNT6yv)
 
 ---
 
@@ -220,7 +220,7 @@ Each change proposal must pass multi-model consensus with P0/P1/P2 severity voti
     <img src="https://github.com/Dezirae-Stark.png" width="50" style="border-radius:50%" alt="GitHub"/>
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://discord.gg/bR82Pfsd" title="Discord: QWAMOS Community">
+  <a href="https://discord.gg/B5nZwNT6yv" title="Discord: QWAMOS Community">
     <img src="assets/discord-logo.png" width="50" style="border-radius:50%" alt="Discord"/>
   </a>
   &nbsp;&nbsp;&nbsp;
