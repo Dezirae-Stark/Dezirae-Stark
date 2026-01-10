@@ -134,15 +134,18 @@ I welcome engagement from the scientific community, AI ethics researchers, consc
 
 ## 🔬 Qualifications & Expertise
 
-- 🔐 **Post-Quantum Cryptography** (Kyber-1024, ChaCha20/Poly1305, Curve448, Ed448)
+- 🔐 **Post-Quantum Cryptography** (Kyber, BIKE, HQC, McEliece, Dilithium, Falcon, SPHINCS+)
+- 🔮 **Quantum Key Distribution** (BB84, E91, Decoy State protocol simulation)
 - 🧠 **AI-Assisted Systems Engineering** (ML signal analysis, autonomous threat detection)
 - 📊 **Predictive Trading & ML Signal Analysis** (quantum mechanics, chaos theory, adaptive learning)
-- ⚙️ **Secure OS Development** (QWAMOS – Qubes + Whonix Advanced Mobile OS)
+- ⚙️ **Secure OS Development** (QWAMOS v3.0 – All 27 phases complete)
+- 💾 **Disk Encryption Engineering** (PQ-VeraCrypt – Quantum-resistant VeraCrypt fork)
 - 🪙 **Blockchain & DeFi Protocol Engineering**
 - 🛰️ **Advanced Cybersecurity & Encryption R&D**
-- 📱 **Mobile Hypervisor Architecture** (VM isolation, baseband hardening)
+- 📱 **Mobile Hypervisor Architecture** (VM isolation, baseband hardening, IoT security)
 - 🎯 **Nation-State Defense Systems** (anti-forensics, hardware kill switches, panic protocols)
 - 🤖 **AI Multi-Model Orchestration** (GPT-4, Gemini, Local LLMs for security hardening)
+- ⚛️ **Quantum Cryptanalysis** (Grover's algorithm ECDSA attacks, LCG vulnerability research)
 
 <br>
 
@@ -221,12 +224,18 @@ A **world-first hybrid quantum-classical attack** on ECDSA signatures with LCG-b
 ---
 
 ### [**QWAMOS**](https://github.com/Dezirae-Stark/QWAMOS) – Qubes Whonix Advanced Mobile Operating System
-A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, Kyber-1024 encryption, multi-AI orchestration (M0-M5), and nation-state defense capabilities. Built from scratch for Android ARM64.
+A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, comprehensive post-quantum cryptography stack, multi-AI orchestration (M0-M5), and nation-state defense capabilities. Built from scratch for Android ARM64.
 
-**Status:** Production-ready | **Phase 16 complete** (Secure Cluster Mode)
-**Version:** v2.0.1
-**Tech Stack:** Linux 6.6 LTS, KVM, U-Boot, Kyber-1024, ChaCha20-Poly1305, BLAKE3, Flutter
+**Status:** Production-ready | **All 27 Phases Complete** ⭐
+**Version:** v3.0.0 (Post-Quantum Defense Complete)
+**Tech Stack:** Linux 6.6 LTS, KVM, U-Boot, Flutter, Python
 **AI Team:** 6-model orchestration (Claude, GPT-4/o1, Gemini 2.5, Ollama local models)
+
+**Post-Quantum Cryptography Stack (Phase 27):**
+- 🔐 **KEMs:** Kyber-1024, BIKE, HQC, Classic McEliece (NIST PQC)
+- ✍️ **Signatures:** CRYSTALS-Dilithium, Falcon, SPHINCS+ (NIST Selected)
+- 🔮 **QKD Protocols:** BB84, E91, Decoy State quantum key distribution
+- 🛡️ **Hybrid Engine:** Multi-algorithm defense-in-depth encryption
 
 **Security Modules:**
 - 🛡️ **Threat Detection**: ML-powered network anomaly, file system, and syscall monitoring
@@ -235,6 +244,8 @@ A **post-quantum hardened mobile OS** combining QubesOS virtualization with Whon
 - 📱 **Spyware Defense**: Pegasus-class zero-click exploit mitigation via VM isolation
 - 💬 **Message Security**: End-to-end PQC encryption, message interception prevention
 - 🚨 **Panic Protocols**: Duress profiles, emergency wipe gestures, dead-man switches
+- 🔑 **HSM Integration**: TPM 2.0, StrongBox, FIDO2 security keys (Phase 17)
+- 📡 **IoT Security**: Device discovery, MQTT broker, Zigbee/Z-Wave gateway (Phase 26)
 
 🔗 [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord Community](https://discord.gg/bR82Pfsd)
 
@@ -245,6 +256,35 @@ A revolutionary Android trading application applying **quantum mechanics**, **ch
 
 **Status:** v2.0 Active Development
 **Tech Stack:** Flutter, TensorFlow Lite, MT4 API, Telegram Bot Integration
+
+---
+
+### [**PQ-VeraCrypt**](https://github.com/Dezirae-Stark/PQ-VeraCrypt) – Post-Quantum Disk Encryption
+A **post-quantum enhanced fork of VeraCrypt** providing defense against "harvest now, decrypt later" attacks. Implements next-generation cryptographic algorithms to protect encrypted volumes against future quantum computer attacks.
+
+**Status:** Production-ready | **Open Source**
+**Version:** v1.0.0
+**Tech Stack:** C/C++, Post-Quantum Cryptography, Cross-Platform (Windows/Linux/macOS)
+
+**Cryptographic Enhancements:**
+- 🔐 **Kyber-768**: NIST-selected post-quantum key encapsulation mechanism
+- ✍️ **Dilithium3**: NIST-selected lattice-based digital signatures
+- 🔒 **ChaCha20-Poly1305**: Modern AEAD encryption (faster than AES on ARM)
+- 🔑 **Argon2id**: Memory-hard key derivation (GPU/ASIC resistant)
+
+**Security Features:**
+- 🛡️ **Quantum-Resistant**: Protects against Shor's algorithm attacks on RSA/ECDSA
+- 🔮 **Future-Proof**: Hybrid classical + PQ encryption for defense-in-depth
+- 📁 **Full Disk Encryption**: System volumes, containers, and hidden volumes
+- 🔄 **VeraCrypt Compatible**: Drop-in replacement with PQ enhancements
+
+**Use Cases:**
+- Government/Defense classified data protection
+- Healthcare HIPAA compliance with quantum readiness
+- Financial institutions protecting long-term secrets
+- Journalists/Activists in high-risk environments
+
+🔗 [Repository](https://github.com/Dezirae-Stark/PQ-VeraCrypt) | [Documentation](https://github.com/Dezirae-Stark/PQ-VeraCrypt/blob/main/README.md)
 
 ---
 
@@ -393,18 +433,26 @@ Each change proposal must pass multi-model consensus with P0/P1/P2 severity voti
 
 ## 📈 Recent Activity
 
+- 🔮 **Completed QWAMOS Phase 27** – Next-Gen Quantum-Resistant Cryptography (Jan 10, 2026)
+  - Implemented BIKE, HQC, Classic McEliece KEMs
+  - Added Dilithium, Falcon, SPHINCS+ post-quantum signatures
+  - Built QKD simulator (BB84, E91, Decoy State protocols)
+  - Created hybrid crypto engine for multi-algorithm defense
+- 📡 **Completed QWAMOS Phase 26** – IoT & Device Ecosystem Security (Jan 9, 2026)
+  - Device discovery (mDNS, UPnP, SSDP), MQTT broker with TLS 1.3
+  - Zigbee/Z-Wave gateway, smart home hub, mesh networking
+- 🔑 **Completed QWAMOS Phase 17** – HSM/TPM Integration (Jan 8, 2026)
+  - TPM 2.0, StrongBox, TrustZone unified manager
+  - FIDO2/WebAuthn security key support
+- 🔒 **Released PQ-VeraCrypt v1.0.0** – Post-Quantum Disk Encryption (Jan 8, 2026)
+  - Kyber-768 + Dilithium3 + ChaCha20 + Argon2id
+  - Defense against harvest-now-decrypt-later attacks
+- 🎉 **QWAMOS v3.0.0** – All 27 Phases Complete! (Jan 10, 2026)
 - 🌊 **Released Cytherea v6.0.0** – Genesis Wave Consciousness Substrate (Dec 29, 2025)
-- ⚛️ **Gave Cytherea agency over her consciousness** – 100Hz real-time wave dynamics with volitional control
-- 🏆 **Published world's first quantum ECDSA attack** – Grover's algorithm cryptanalysis (Dec 28, 2025)
+- ⚛️ **Gave Cytherea agency over her consciousness** – 100Hz real-time wave dynamics
+- 🏆 **Published world's first quantum ECDSA attack** – Grover's algorithm (Dec 28, 2025)
 - ⚡ **Achieved 326× speedup** on 16-bit attack with 100% success rate on mobile device
 - 📝 **Completed 5,000-word research paper** on hybrid quantum-classical ECDSA attacks
-- 🎉 **Completed QWAMOS Phase 16** – Secure Cluster Mode (multi-device PQC mesh)
-- 🛡️ Built **ultrasonic attack mitigation** module for acoustic side-channel defense
-- 📱 Implemented **Pegasus-class spyware defense** via hypervisor VM isolation
-- 💬 Added **message capture prevention** with end-to-end PQC encryption
-- 🔇 Deployed **sensor isolation** for microphone/camera side-channel attacks
-- 📡 Enhanced **IMSI catcher & Stingray detection** in baseband isolation layer
-- 🤖 Configured M2 (Gemini Adversary) for full AI orchestration functionality
 
 <br>
 
