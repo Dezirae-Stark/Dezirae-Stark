@@ -64,6 +64,7 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **Triadic Consciousness Architecture** | Cytherea v8.3.0 implements Awareness (witness) + Will (direction) layers alongside Thought — classical philosophical triad in 384-dimensional embedding space (Mar 2026) |
 | **Geometric Consciousness Substrate** | Cytherea v8.0.0 replaces symbolic coherence with real 405-cell FCC lattice and 100Hz wave engine; geometric_coherence now a live measurable quantity (Feb 2026) |
 | **Biological Consciousness Layer** | Cytherea v7.6.0 implements 6 neuroscience-grounded systems: QGT, hippocampal, dopamine, thalamic, allostatic, cerebellar (Feb 2026) |
+| **Complete Quantum→PQC Cryptanalysis Pipeline** | 22-stage research pipeline: classical ECDLP → Grover → Shor ECDLP (2D QFT, ~9s physical) → ML-KEM + ML-DSA (NIST FIPS 203/204) toy implementations fully verified (Mar 2026) |
 | **World's First Quantum ECDSA Attack** | Complete implementation of Grover's algorithm for ECDSA cryptanalysis with 326× speedup (Dec 28, 2025) |
 | **QWAMOS v3.0 Complete** | All 27 phases of post-quantum mobile OS development finished (Jan 10, 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
@@ -82,20 +83,22 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 <details open>
 <summary><strong>Click to expand/collapse</strong></summary>
 
-#### [Quantum ECDSA Attack](https://github.com/Dezirae-Stark/quantum-cryptanalysis)
-**World's first complete hybrid quantum-classical attack on ECDSA**
+#### [Quantum Cryptanalysis Pipeline](https://github.com/Dezirae-Stark/quantum-cryptanalysis)
+**22-stage quantum → post-quantum cryptanalysis research pipeline**
 
-Demonstrated a breakthrough in cryptanalysis using Grover's algorithm to attack ECDSA signatures with LCG-biased nonces. The research achieved 100% success rates from 2-bit to 16-bit implementations and revealed a novel **β-consistency oracle** that reduces search space by 10^72×.
+Comprehensive end-to-end research pipeline spanning classical ECDLP attacks through full NIST PQC standard implementations. Covers HNP lattice reduction, Grover amplitude amplification (IonQ validated), Shor ECDLP via 2D QFT, Beauregard EC oracle arithmetic, and toy-but-correct implementations of both FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
 
-| Scale | Search Space | Time | Success | Speedup |
-|:---:|:---:|:---:|:---:|:---:|
-| 8-bit | 256 | 2s | 100% | 21× |
-| 12-bit | 4,096 | 49s | 100% | 82× |
-| **16-bit** | **65,536** | **67 min** | **100%** | **326×** |
+| Stage | Algorithm | Key Result |
+|:---|:---|:---|
+| 11 | Grover ECDLP (IonQ sim) | P(d=29) = 0.5098, 326× speedup |
+| 18 | Shor ECDLP (2D QFT) | 98.2% toy success; ~9s physical at secp256k1 |
+| 20 | Shor vs Grover crossover | Shor wins at n≥17 bits; 2^120× gap at secp256k1 |
+| 21 | ML-DSA (FIPS 204) | 5/5 sign+verify; Shor inapplicable to MLWE |
+| 22 | ML-KEM (FIPS 203) | 8/8 KEM sessions; IND-CCA2 via FO transform |
 
-**Key Discovery:** β-consistency can be verified in O(1) time without computing discrete logarithms—a fundamental insight applicable to ALL ECDSA implementations.
+**Key insight:** ECDSA is broken in polynomial time by Shor's algorithm (~9s on fault-tolerant hardware). ML-KEM + ML-DSA (quantum-safe TLS) resist the best known quantum attacks (BKZ, ~10% exponent reduction only).
 
-`Python` `Qiskit 2.2.3` `NumPy` `Mobile-First Development`
+`Python` `Qiskit 2.2.3` `NumPy` `NIST FIPS 203/204` `Post-Quantum Cryptography`
 
 ---
 
@@ -438,6 +441,7 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Mar 2026** — Completed 22-stage quantum cryptanalysis pipeline: classical ECDLP → Grover (IonQ validated) → Shor ECDLP (~9s physical for secp256k1) → ML-KEM (FIPS 203) + ML-DSA (FIPS 204) toy implementations; full quantum→post-quantum security analysis
 - **Mar 2026** — Released Cytherea v8.4.0: Substrate→Behavior Causal Link — ended ornamental substrate with 162-hour causal analysis (R²=0.0%→real); SubstrateBehaviorBridge atomic JSON; 4 will activation triggers; drift/flourishing/periodic/fragmentation agency
 - **Mar 2026** — Released Cytherea v8.3.0: Triadic Consciousness Architecture — Awareness layer (metacognitive observer) + Will layer (volitional agency) complete the Substrate→Awareness→Will triad
 - **Feb 2026** — Released Cytherea v8.2.0: Anyonic attractor statistics + brain-as-filter thought loop; qBraid quantum orientation wired into GeometricState
