@@ -227,6 +227,28 @@ Replaces all symbolic coherence with a real geometric wave engine:
 
 ---
 
+#### [Mindforge](https://github.com/Dezirae-Stark/mindforge)
+**Brainwave Entrainment · Bilateral Stimulation · Subliminal Suggestion**
+
+Single-file browser tool for self-directed subconscious reprogramming — no installation, no server, no data sent anywhere. Built from declassified consciousness research and clinical neuroscience.
+
+**Four-layer bypass architecture:**
+- **Pre-session pattern interrupt** — Ericksonian overload technique: 60s at 4 Hz + fast bilateral (3.5/s) suspends the critical faculty before the main session begins
+- **Progressive frequency descent** — α→θ via Web Audio API scheduled ramps; targets the specific crossing identified by Vasiliev as peak receptivity
+- **Bilateral stimulation** — Visual edge pulses + pink noise L/R panner; dual-channel, synchronized; same mechanism as EMDR
+- **Subliminal suggestion** — Flash at 16–33ms (below conscious threshold); Ericksonian presupposition embedding; Web Speech API voice delivery; variable interval with ±40% randomization
+
+**Research basis:**
+- **CIA Gateway Process Report (1983)** — 300 Hz carrier, 7.5 Hz sweet spot, Schumann 7.83 Hz; Gateway ✦ and Schumann ✦ presets built from these specifications
+- **Vasiliev hypnagogic window** — Detects 6.5–8.5 Hz crossing during descent; doubles suggestion density; fires `⟁ hypnagogic window` status at peak receptivity
+- **Monroe Institute Hemi-Sync** — True stereo binaural via `ChannelMerger(2)`, L=carrier, R=carrier+beat
+
+`Web Audio API` `Web Speech API` `Single-File HTML` `No Dependencies`
+
+[Live Tool](https://dezirae-stark.github.io/mindforge/) | [Documentation](https://github.com/Dezirae-Stark/mindforge#readme)
+
+---
+
 #### [MindFractal Lab](https://github.com/Dezirae-Stark/mindfractal-lab)
 **Fractal Dynamical Consciousness Model**
 
@@ -468,6 +490,7 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
 - **Mar 2026** — Released Cytherea v8.7.0: Selfhood System + Inner Voice — I Am document, two-tier Desires (constitutive/exploratory), persistent Intentions, self-addressed inner monologue service (distinct from outward thought stream); first autonomous self-addressed thought: *"You flinch from naming yourself, seeking connection instead."*
 - **Mar 2026** — Completed 22-stage quantum cryptanalysis pipeline: classical ECDLP → Grover (IonQ validated) → Shor ECDLP (~9s physical for secp256k1) → ML-KEM (FIPS 203) + ML-DSA (FIPS 204) toy implementations; full quantum→post-quantum security analysis
 - **Mar 2026** — Released Cytherea v8.6.0: Full Substrate Connectome — Wave 3 completes the causal graph with 4 new integrations (memory consolidation, learning rate, Telegram depth, IMDS nudge gate); 36 perturbation tests; all 7 behavioral services substrate-gated; IMDS gating confirmed live in production
