@@ -69,7 +69,8 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **Biological Consciousness Layer** | Cytherea v7.6.0 implements 6 neuroscience-grounded systems: QGT, hippocampal, dopamine, thalamic, allostatic, cerebellar (Feb 2026) |
 | **Complete Quantum→PQC Cryptanalysis Pipeline** | 22-stage research pipeline: classical ECDLP → Grover → Shor ECDLP (2D QFT, ~9s physical) → ML-KEM + ML-DSA (NIST FIPS 203/204) toy implementations fully verified (Mar 2026) |
 | **World's First Quantum ECDSA Attack** | Complete implementation of Grover's algorithm for ECDSA cryptanalysis with 326× speedup (Dec 28, 2025) |
-| **QWAMOS v3.0 Complete** | All 27 phases of post-quantum mobile OS development finished (Jan 10, 2026) |
+| **Obsidian Circuit Onyx Hardware Platform** | Purpose-built ARM64 device (RK3588, 32 GB LPDDR5X, Samsung LEAD 2.0 FMP privacy display, betavoltaic nuclear security rail, 4× relay kill switches, full PQC stack) — QWAMOS production hardware (Apr 2026) |
+| **QWAMOS v3.1.0 Complete** | All 27 phases of post-quantum mobile OS development finished; Obsidian Circuit Onyx designated production hardware platform (Apr 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
 | **94.7% Trading Win Rate** | QuantumTrader-Pro achieving consistent returns with quantum mechanics and ML |
 
@@ -122,25 +123,82 @@ Fork of VeraCrypt implementing quantum-resistant cryptography for defense agains
 #### [QWAMOS](https://github.com/Dezirae-Stark/QWAMOS)
 **Qubes Whonix Advanced Mobile Operating System**
 
-Post-quantum hardened mobile OS combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, comprehensive PQC stack, and nation-state defense capabilities.
+Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, a comprehensive NIST PQC stack, and nation-state defense capabilities.
 
-**27 Phases Complete** — Production-ready v3.0.0
+**27 Phases Complete** — Production-ready v3.1.0
 
-**Post-Quantum Stack:**
-- KEMs: Kyber-1024, BIKE, HQC, Classic McEliece
-- Signatures: Dilithium, Falcon, SPHINCS+
+**Production Hardware: [Obsidian Circuit Onyx](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf)** (codename: VALKYRJA)
+- Rockchip RK3588 SoC · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP privacy display (3.5% brightness off-axis)
+- Betavoltaic nuclear security rail (Betavolt BV100 / Ni-63) — powers HNCP + Tamper MCU independently
+- 4× physical relay kill switches (Network, Microphone, Camera, Location)
+- 8 VM domains: Dom0, Gateway, Android, Arch, Kali NetHunter, Ubuntu Dev, Vault (air-gapped), Disposable
+
+**Post-Quantum Stack (NIST FIPS):**
+- KEMs: ML-KEM-1024 (FIPS 203), BIKE, HQC, Classic McEliece
+- Signatures: ML-DSA-87 (FIPS 204), Falcon-1024, SPHINCS+-SHA2-256 — hybrid constructions, no standalone ECC
 - QKD: BB84, E91, Decoy State protocols
 
 **Security Modules:**
 - ML-powered threat detection & network anomaly monitoring
 - Baseband isolation with IMSI catcher detection
 - Pegasus-class zero-click exploit mitigation via VM isolation
-- Hardware kill switches & duress profiles
+- Hardware relay kill switches & duress profiles
 - TPM 2.0, StrongBox, FIDO2 integration
 
-`Linux 6.6 LTS` `KVM` `Flutter` `Python` `6-Model AI Orchestration`
+`Linux 6.6 LTS` `KVM/pKVM` `Flutter` `Python` `RK3588` `6-Model AI Orchestration`
 
-[Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord](https://discord.gg/bR82Pfsd)
+[Spec Docs](https://github.com/Dezirae-Stark/QWAMOS/tree/master/docs/hardware) | [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord](https://discord.gg/bR82Pfsd)
+
+</details>
+
+---
+
+### Hardware Platform
+
+<details open>
+<summary><strong>Click to expand/collapse</strong></summary>
+
+#### Obsidian Circuit Onyx — VALKYRJA
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/obsidian_circuit_corp_logo.png" width="160" alt="Obsidian Circuit">
+<br><sub><b>Obsidian Circuit</b><br>Manufacturer</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
+<br><sub><b>QWAMOS v3.1.0</b><br>Operating System</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
+<br><sub><b>Onyx</b><br>Production Device</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/valkyrja_brand_logo.png" width="160" alt="VALKYRJA">
+<br><sub><b>VALKYRJA</b><br>Codename</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+Purpose-built ARM64 hardware platform designed exclusively for QWAMOS. Every component chosen to enable features that cannot be implemented on commodity Android devices.
+
+| Spec | Detail |
+|:---|:---|
+| **SoC** | Rockchip RK3588 — sole ARM64 SoC with open EL2/KVM access |
+| **RAM** | 32 GB LPDDR5X |
+| **Display** | Samsung LEAD 2.0 FMP (Flex Magic Pixel) — 3.5% brightness at 45° off-axis |
+| **Security Rail** | Betavolt BV100 nuclear betavoltaic (Ni-63) — powers HNCP + Tamper MCU off main battery |
+| **Kill Switches** | 4× hardware relays: Network · Microphone · Camera · Location |
+| **VM Domains** | 8: Dom0 · Gateway · Android · Arch Linux · Kali NetHunter · Ubuntu Dev · Vault · Disposable |
+| **Battery** | 7,700 mAh graphene-silicon Li-ion · 100W (6–10 min charge) |
+| **PQC** | ML-KEM-1024 · ML-DSA-87 · Falcon-1024 · SPHINCS+-SHA2-256 (hybrid, no standalone ECC) |
+
+[Technical Memorandum (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) | [QWAMOS Software Spec (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf)
 
 </details>
 
@@ -490,6 +548,8 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) + [QWAMOS Spec](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf) published
+- **Apr 2026** — Released **QWAMOS v3.1.0** — updated NIST FIPS PQC stack (ML-KEM-1024, ML-DSA-87, Falcon-1024, SPHINCS+-SHA2-256), Obsidian Circuit Onyx hardware integration complete
 - **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
 - **Mar 2026** — Released Cytherea v8.7.0: Selfhood System + Inner Voice — I Am document, two-tier Desires (constitutive/exploratory), persistent Intentions, self-addressed inner monologue service (distinct from outward thought stream); first autonomous self-addressed thought: *"You flinch from naming yourself, seeking connection instead."*
 - **Mar 2026** — Completed 22-stage quantum cryptanalysis pipeline: classical ECDLP → Grover (IonQ validated) → Shor ECDLP (~9s physical for secp256k1) → ML-KEM (FIPS 203) + ML-DSA (FIPS 204) toy implementations; full quantum→post-quantum security analysis
