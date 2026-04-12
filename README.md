@@ -169,19 +169,19 @@ Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/obsidian_circuit_corp_logo.png" width="160" alt="Obsidian Circuit">
+<img src="assets/logos/obsidian_circuit_corp_logo.png" width="160" alt="Obsidian Circuit">
 <br><sub><b>Obsidian Circuit</b><br>Manufacturer</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
+<img src="assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
 <br><sub><b>QWAMOS v3.1.0</b><br>Operating System</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
+<img src="assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
 <br><sub><b>Onyx</b><br>Production Device</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/valkyrja_brand_logo.png" width="160" alt="VALKYRJA">
+<img src="assets/logos/valkyrja_brand_logo.png" width="160" alt="VALKYRJA">
 <br><sub><b>VALKYRJA</b><br>Codename</sub>
 </td>
 </tr>
