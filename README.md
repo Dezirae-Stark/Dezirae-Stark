@@ -2,7 +2,7 @@
 
 # Desirae Ann Stark
 
-**R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness**
+**R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness | Counter-Extremism OSINT**
 **First Sterling Capital, LLC**
 
 <br>
@@ -76,6 +76,7 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **QWAMOS v3.1.0 Complete** | All 27 phases of post-quantum mobile OS development finished; Obsidian Circuit Onyx designated production hardware platform (Apr 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
 | **94.7% Trading Win Rate** | QuantumTrader-Pro achieving consistent returns with quantum mechanics and ML |
+| **GhostExodus OSINT Platform v1.0.0** | Full-stack counter-extremism intelligence suite — real-time Telegram monitoring, AI threat classification, semantic search/RAG, entity graph correlation, evidence management, and PDF intelligence reports; Windows installer + source release (Apr 2026) |
 
 </div>
 
@@ -423,6 +424,46 @@ Accept tips via Bitcoin, Lightning, Monero, and more without exposing personal i
 
 ---
 
+### Intelligence & OSINT
+
+<details open>
+<summary><strong>Click to expand/collapse</strong></summary>
+
+#### [GhostExodus OSINT Platform](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools)
+**Counter-Extremism Open Source Intelligence Suite v1.0.0**
+
+Full-stack intelligence platform for monitoring, analyzing, and reporting on extremist activity across Telegram channels and other sources. Built for analysts, researchers, and counter-terrorism professionals.
+
+**Core Capabilities:**
+- **Real-Time Telegram Monitoring** — Multi-account Telethon integration; monitor unlimited channels; live message ingestion with severity triage
+- **AI Threat Classification** — Local Ollama LLM (llama3.2/mistral) classifies every message; 5-tier severity (NONE → CRITICAL); keyword/entity extraction; propaganda/incitement/recruitment/coordination detection
+- **Semantic Search & RAG** — ChromaDB vector store; natural language queries across all ingested intelligence; LLM-synthesized threat summaries with citations
+- **Entity Correlation Graph** — Cross-message entity linking; auto-resolve aliases; visual graph of actors, channels, and relationships
+- **Evidence Management** — Cryptographic hash chain; chain of custody; export packages (ZIP with metadata)
+- **Intelligence Reports** — AI-drafted PDF/HTML reports via WeasyPrint; export-ready for operational use
+- **Alert Rules Engine** — Custom regex/keyword triggers with webhook delivery
+- **Role-Based Access** — Admin / Analyst / Viewer; full JWT auth; audit log of all actions
+
+**Architecture:**
+| Layer | Technology |
+|:---|:---|
+| Backend API | FastAPI · SQLModel · SQLite |
+| AI Engine | Ollama (local LLM) · llama3.2 / mistral |
+| Vector Search | ChromaDB · sentence-transformers |
+| Telegram | Telethon multi-account client |
+| Frontend | React 18 · Vite · Tailwind CSS |
+| Reports | WeasyPrint PDF · HTML fallback |
+| Scheduler | APScheduler (integrity, entity-link, cache) |
+| Auth | JWT RS256 · bcrypt · RBAC |
+
+**Release:** [v1.0.0 — Windows Installer + Full Source](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.0.0)
+
+`Python` `FastAPI` `React` `SQLite` `ChromaDB` `Ollama` `Telethon` `Tailwind CSS`
+
+</details>
+
+---
+
 ### Mobile Development
 
 <details open>
@@ -532,6 +573,8 @@ Custom 6-model orchestration system for QWAMOS development:
 ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)
@@ -573,6 +616,7 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Apr 2026** — Released **[GhostExodus OSINT Platform v1.0.0](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.0.0)** — full-stack counter-extremism intelligence suite; real-time Telegram channel monitoring · local Ollama AI threat classification · ChromaDB semantic search/RAG · entity correlation graph · evidence chain-of-custody · PDF intelligence reports · Windows installer package
 - **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) + [QWAMOS Spec](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf) published
 - **Apr 2026** — Released **QWAMOS v3.1.0** — updated NIST FIPS PQC stack (ML-KEM-1024, ML-DSA-87, Falcon-1024, SPHINCS+-SHA2-256), Obsidian Circuit Onyx hardware integration complete
 - **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
