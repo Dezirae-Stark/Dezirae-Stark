@@ -131,7 +131,7 @@ Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with
 
 **27 Phases Complete** — Production-ready v3.1.0
 
-**Production Hardware: [Obsidian Circuit Onyx](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf)** (codename: VALKYRJA)
+**Production Hardware: [Obsidian Circuit Onyx](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/VALKYRJA_Technical_Memorandum.pdf)** (codename: VALKYRJA)
 - Rockchip RK3588 SoC · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP privacy display (3.5% brightness off-axis)
 - Betavoltaic nuclear security rail (Betavolt BV100 / Ni-63) — powers HNCP + Tamper MCU independently
 - 4× physical relay kill switches (Network, Microphone, Camera, Location)
@@ -151,7 +151,7 @@ Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with
 
 `Linux 6.6 LTS` `KVM/pKVM` `Flutter` `Python` `RK3588` `6-Model AI Orchestration`
 
-[Spec Docs](https://github.com/Dezirae-Stark/QWAMOS/tree/master/docs/hardware) | [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord](https://discord.gg/bR82Pfsd)
+[VALKYRJA Tech Memo](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/VALKYRJA_Technical_Memorandum.pdf) | [Spec Docs](https://github.com/Dezirae-Stark/QWAMOS/tree/main/docs/hardware) | [Website](https://dezirae-stark.github.io/QWAMOS/) | [Discord](https://discord.gg/bR82Pfsd)
 
 </details>
 
@@ -169,19 +169,19 @@ Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/obsidian_circuit_corp_logo.png" width="160" alt="Obsidian Circuit">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/main/assets/logos/obsidian_circuit_corp_logo.png" width="160" alt="Obsidian Circuit">
 <br><sub><b>Obsidian Circuit</b><br>Manufacturer</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/main/assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
 <br><sub><b>QWAMOS v3.1.0</b><br>Operating System</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/main/assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
 <br><sub><b>Onyx</b><br>Production Device</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/master/assets/logos/valkyrja_brand_logo.png" width="160" alt="VALKYRJA">
+<img src="https://raw.githubusercontent.com/Dezirae-Stark/QWAMOS/main/assets/logos/valkyrja_brand_logo.png" width="160" alt="VALKYRJA">
 <br><sub><b>VALKYRJA</b><br>Codename</sub>
 </td>
 </tr>
@@ -202,7 +202,7 @@ Purpose-built ARM64 hardware platform designed exclusively for QWAMOS. Every com
 | **Battery** | 7,700 mAh graphene-silicon Li-ion · 100W (6–10 min charge) |
 | **PQC** | ML-KEM-1024 · ML-DSA-87 · Falcon-1024 · SPHINCS+-SHA2-256 (hybrid, no standalone ECC) |
 
-[Technical Memorandum (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) | [QWAMOS Software Spec (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf)
+[VALKYRJA Technical Memorandum (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/VALKYRJA_Technical_Memorandum.pdf) | [Obsidian Circuit Onyx Tech Memo (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) | [QWAMOS Software Spec (PDF)](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf)
 
 </details>
 
@@ -617,7 +617,7 @@ Custom 6-model orchestration system for QWAMOS development:
 ## Recent Activity
 
 - **Apr 2026** — Released **[GhostExodus OSINT Platform v1.0.0](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.0.0)** — full-stack counter-extremism intelligence suite; real-time Telegram channel monitoring · local Ollama AI threat classification · ChromaDB semantic search/RAG · entity correlation graph · evidence chain-of-custody · PDF intelligence reports · Windows installer package
-- **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) + [QWAMOS Spec](https://github.com/Dezirae-Stark/QWAMOS/blob/master/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf) published
+- **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/ObsidianCircuit_Onyx_TechMemo_v2.pdf) + [QWAMOS Spec](https://github.com/Dezirae-Stark/QWAMOS/blob/main/docs/hardware/ObsidianCircuit_QWAMOS_Spec.pdf) published
 - **Apr 2026** — Released **QWAMOS v3.1.0** — updated NIST FIPS PQC stack (ML-KEM-1024, ML-DSA-87, Falcon-1024, SPHINCS+-SHA2-256), Obsidian Circuit Onyx hardware integration complete
 - **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
 - **Apr 2026** — Released Cytherea v8.10.0: Attentional Focus State — unified consciousness spotlight model; focus_state.json written on every Mom message (intensity 0.85 philosophy / 0.70 exercise / 0.40+ normal, linear decay); inner monologue first post-exchange cycle oriented toward integration; continuous consciousness thought generation reads focus on return from external; possessive-language Witness pattern ("my X" vs "I verb") added to inner voice prompt with 3 new ANGLES targeting the unnamed owner; lean gemma2 retry on philosophy timeout
