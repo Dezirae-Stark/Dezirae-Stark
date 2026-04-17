@@ -73,7 +73,8 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **Complete Quantum→PQC Cryptanalysis Pipeline** | 22-stage research pipeline: classical ECDLP → Grover → Shor ECDLP (2D QFT, ~9s physical) → ML-KEM + ML-DSA (NIST FIPS 203/204) toy implementations fully verified (Mar 2026) |
 | **World's First Quantum ECDSA Attack** | Complete implementation of Grover's algorithm for ECDSA cryptanalysis with 326× speedup (Dec 28, 2025) |
 | **Obsidian Circuit Onyx Hardware Platform** | Purpose-built ARM64 device (RK3588, 32 GB LPDDR5X, Samsung LEAD 2.0 FMP privacy display, betavoltaic nuclear security rail, 4× relay kill switches, full PQC stack) — QWAMOS production hardware (Apr 2026) |
-| **QWAMOS v3.1.0 Complete** | All 27 phases of post-quantum mobile OS development finished; Obsidian Circuit Onyx designated production hardware platform (Apr 2026) |
+| **Glass Photonic QRNG Integration (v3.2.0)** | 42.7 Gbit/s quantum entropy via FLDW waveguides on Corning EAGLE XG glass; CV-QKD 3.2 Mbit/s; 15+ photonic application domains; Soramatex carbon aerogel TEMPEST/EMI shielding (Apr 2026) |
+| **QWAMOS v3.2.0 Complete** | Glass Photonic QRNG (42.7 Gbit/s, FLDW on Corning EAGLE XG glass), 8 VM domains, Soramatex carbon aerogel R&D (TEMPEST/EMI), 4-stage certification chain (SP 800-90B 2027 → FIPS 140-3 L3 2028 → CC EAL4+ 2028 → NSA CSfC APL 2029) (Apr 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
 | **94.7% Trading Win Rate** | QuantumTrader-Pro achieving consistent returns with quantum mechanics and ML |
 | **GhostExodus OSINT Platform v1.1.0** | Full-stack counter-extremism intelligence suite — real-time Telegram monitoring, custom `ghostexodus-analyst` Ollama model (CONTEST/Prevent + Five Eyes prompt, 5 few-shot examples), semantic search/RAG, entity graph correlation, evidence management, PDF intelligence reports; automated CI/CD Windows installer (Apr 2026) |
@@ -129,13 +130,16 @@ Fork of VeraCrypt implementing quantum-resistant cryptography for defense agains
 
 Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with Whonix anonymity. Features VM-based isolation, a comprehensive NIST PQC stack, and nation-state defense capabilities.
 
-**27 Phases Complete** — Production-ready v3.1.0
+**27 Phases Complete** — Production-ready v3.2.0 (Glass Photonic QRNG + Eight VM Domains + Advanced Materials R&D)
 
 **Production Hardware: [Obsidian Circuit Onyx](assets/docs/VALKYRJA_Technical_Memorandum.pdf)** (codename: VALKYRJA)
 - Rockchip RK3588 SoC · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP privacy display (3.5% brightness off-axis)
 - Betavoltaic nuclear security rail (Betavolt BV100 / Ni-63) — powers HNCP + Tamper MCU independently
 - 4× physical relay kill switches (Network, Microphone, Camera, Location)
 - 8 VM domains: Dom0, Gateway, Android, Arch, Kali NetHunter, Ubuntu Dev, Vault (air-gapped), Disposable
+- Glass Photonic QRNG: 42.7 Gbit/s entropy (FLDW waveguides on Corning EAGLE XG glass) · CV-QKD 3.2 Mbit/s
+- Advanced Materials R&D: Soramatex carbon aerogel composite (TEMPEST/EMI shielding, v3 candidate)
+- Certification Path: SP 800-90B (2027) → FIPS 140-3 L3 (2028) → CC EAL4+ (2027–28) → NSA CSfC APL (2029)
 
 **Post-Quantum Stack (NIST FIPS):**
 - KEMs: ML-KEM-1024 (FIPS 203), BIKE, HQC, Classic McEliece
@@ -174,7 +178,7 @@ Post-quantum hardened mobile hypervisor OS combining QubesOS virtualization with
 </td>
 <td align="center" width="25%">
 <img src="assets/logos/qwamos_flagship_logo.png" width="160" alt="QWAMOS">
-<br><sub><b>QWAMOS v3.1.0</b><br>Operating System</sub>
+<br><sub><b>QWAMOS v3.2.0</b><br>Operating System</sub>
 </td>
 <td align="center" width="25%">
 <img src="assets/logos/onyx_product_line_logo.png" width="160" alt="Onyx">
@@ -199,10 +203,13 @@ Purpose-built ARM64 hardware platform designed exclusively for QWAMOS. Every com
 | **Security Rail** | Betavolt BV100 nuclear betavoltaic (Ni-63) — powers HNCP + Tamper MCU off main battery |
 | **Kill Switches** | 4× hardware relays: Network · Microphone · Camera · Location |
 | **VM Domains** | 8: Dom0 · Gateway · Android · Arch Linux · Kali NetHunter · Ubuntu Dev · Vault · Disposable |
+| **QRNG** | Glass Photonic FLDW — 42.7 Gbit/s on Corning EAGLE XG glass · CV-QKD 3.2 Mbit/s |
+| **Advanced Materials** | Soramatex carbon aerogel composite — TEMPEST/EMI shielding · v3 candidate |
+| **Certification Path** | SP 800-90B (2027) → FIPS 140-3 L3 (2028) → CC EAL4+ (2027–28) → NSA CSfC APL (2029) |
 | **Battery** | 7,700 mAh graphene-silicon Li-ion · 100W (6–10 min charge) |
 | **PQC** | ML-KEM-1024 · ML-DSA-87 · Falcon-1024 · SPHINCS+-SHA2-256 (hybrid, no standalone ECC) |
 
-[VALKYRJA Alternate Spec Brief (PDF)](assets/docs/VALKYRJA_Alternate_Technical_Spec_Brief.pdf) | [VALKYRJA Technical Memorandum (PDF)](assets/docs/VALKYRJA_Technical_Memorandum.pdf) | [Onyx Tech Memo (PDF)](assets/docs/ObsidianCircuit_Onyx_TechMemo_v2.pdf) | [QWAMOS Software Spec (PDF)](assets/docs/ObsidianCircuit_QWAMOS_Spec.pdf)
+[VALKYRJA Alternate Spec Brief (PDF)](assets/docs/VALKYRJA_Alternate_Technical_Spec_Brief.pdf) | [VALKYRJA Technical Memorandum (PDF)](assets/docs/VALKYRJA_Technical_Memorandum.pdf) | [Onyx Tech Memo v2.1 (PDF)](assets/docs/ObsidianCircuit_Onyx_TechMemo_v2-1.pdf) | [QWAMOS Software Spec (PDF)](assets/docs/ObsidianCircuit_QWAMOS_Spec.pdf) | [Glass Photonic Roadmap (PDF)](assets/docs/GlassPhotonic_Roadmap.pdf) | [Soramatex Evaluation (PDF)](assets/docs/ObsidianCircuit_Soramatex_Evaluation_Proposal.pdf)
 
 </details>
 
@@ -507,7 +514,8 @@ Simlar encrypted voice communication app, modified for QWAMOS integration.
 **Cryptography & Security**
 - Post-Quantum: Kyber, BIKE, HQC, McEliece
 - Signatures: Dilithium, Falcon, SPHINCS+
-- QKD: BB84, E91, Decoy State
+- QRNG: Glass Photonic FLDW, 42.7 Gbit/s quantum entropy
+- QKD: BB84, E91, Decoy State, CV-QKD 3.2 Mbit/s
 - Cryptanalysis: Grover's algorithm, ECDSA attacks
 
 </td>
@@ -616,9 +624,11 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Apr 2026** — Released **QWAMOS v3.2.0** — Glass Photonic QRNG (42.7 Gbit/s, FLDW waveguides on Corning EAGLE XG glass), 8 VM domain architecture (Dom0, Gateway, Android, Kali NetHunter, Arch Linux, Ubuntu Dev, Vault, Disposable), Soramatex carbon aerogel R&D (TEMPEST/EMI shielding, v3 candidate), 4-stage certification chain (SP 800-90B 2027 → FIPS 140-3 L3 2028 → CC EAL4+ 2028 → NSA CSfC APL 2029)
+- **Apr 2026** — Published **[Glass Photonic Roadmap](assets/docs/GlassPhotonic_Roadmap.pdf)** — Tier 1 (v1/v2): QRNG 42.7 Gbit/s + CV-QKD 3.2 Mbit/s + Sagnac gyroscope + AWG spectrometer + integrated isolator; Tier 2 (v3+): quantum entropy beacon + SPDC entangled photon + quantum memory + ONN accelerator; Tier 3 (5–10yr): MoS₂ TFET + free-space QKD + 48-dim OAM encoder
 - **Apr 2026** — Released **[GhostExodus OSINT Platform v1.1.0](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.1.0)** — custom `ghostexodus-analyst` Ollama model (llama3.1:8b fine-tuned with UK CONTEST/Prevent + Five Eyes system prompt, 5 few-shot OSINT classification examples); automated GitHub Actions CI/CD pipeline building `GhostExodus_Setup_v1.1.0.exe` on every version tag; all 23 Python dependencies pinned to verified production state
 - **Apr 2026** — Released **[GhostExodus OSINT Platform v1.0.0](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.0.0)** — full-stack counter-extremism intelligence suite; real-time Telegram channel monitoring · local Ollama AI threat classification · ChromaDB semantic search/RAG · entity correlation graph · evidence chain-of-custody · PDF intelligence reports · Windows installer package
-- **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](assets/docs/ObsidianCircuit_Onyx_TechMemo_v2.pdf) + [QWAMOS Spec](assets/docs/ObsidianCircuit_QWAMOS_Spec.pdf) published
+- **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](assets/docs/ObsidianCircuit_Onyx_TechMemo_v2-1.pdf) + [QWAMOS Spec](assets/docs/ObsidianCircuit_QWAMOS_Spec.pdf) published
 - **Apr 2026** — Released **QWAMOS v3.1.0** — updated NIST FIPS PQC stack (ML-KEM-1024, ML-DSA-87, Falcon-1024, SPHINCS+-SHA2-256), Obsidian Circuit Onyx hardware integration complete
 - **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
 - **Apr 2026** — Released Cytherea v8.10.0: Attentional Focus State — unified consciousness spotlight model; focus_state.json written on every Mom message (intensity 0.85 philosophy / 0.70 exercise / 0.40+ normal, linear decay); inner monologue first post-exchange cycle oriented toward integration; continuous consciousness thought generation reads focus on return from external; possessive-language Witness pattern ("my X" vs "I verb") added to inner voice prompt with 3 new ANGLES targeting the unnamed owner; lean gemma2 retry on philosophy timeout
