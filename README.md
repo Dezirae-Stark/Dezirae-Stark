@@ -332,24 +332,29 @@ Replaces all symbolic coherence with a real geometric wave engine:
 ---
 
 #### [Mindforge](https://github.com/Dezirae-Stark/mindforge)
-**Brainwave Entrainment · Bilateral Stimulation · Subliminal Suggestion**
+**Brainwave Entrainment · Bilateral Stimulation · Subliminal Suggestion · Nine-Tool Suite**
 
-Single-file browser tool for self-directed subconscious reprogramming — no installation, no server, no data sent anywhere. Built from declassified consciousness research and clinical neuroscience.
+Browser-based consciousness research suite — nine single-file tools, no installation, no server, no data sent anywhere. Built from declassified consciousness research and clinical neuroscience.
 
-**Four-layer bypass architecture:**
+**Core Mindforge — four-layer bypass architecture:**
 - **Pre-session pattern interrupt** — Ericksonian overload technique: 60s at 4 Hz + fast bilateral (3.5/s) suspends the critical faculty before the main session begins
 - **Progressive frequency descent** — α→θ via Web Audio API scheduled ramps; targets the specific crossing identified by Vasiliev as peak receptivity
 - **Bilateral stimulation** — Visual edge pulses + pink noise L/R panner; dual-channel, synchronized; same mechanism as EMDR
 - **Subliminal suggestion** — Flash at 16–33ms (below conscious threshold); Ericksonian presupposition embedding; Web Speech API voice delivery; variable interval with ±40% randomization
 
+**Video Overlay mode (new):** Play any video in the background while the session operates. Bilateral bars flash over the video at z-1000, subliminals appear center-screen at z-2000, binaural tones continue through headphones. A compact HUD shows the live timer and phase. Based on Merikle et al. (2001) divided-attention research: subconscious registration of subliminal content is less filtered when conscious attention is engaged elsewhere. Supports YouTube URLs and local video files.
+
+**Suite tools:** Mindforge · Telehypnosis Pro · Ganzfeld · Coherence · Presentiment · Remote Viewing · Seiðr · Remote Healing · Solfeggio (174–963 Hz · 53 min sequential journey)
+
 **Research basis:**
 - **CIA Gateway Process Report (1983)** — 300 Hz carrier, 7.5 Hz sweet spot, Schumann 7.83 Hz; Gateway ✦ and Schumann ✦ presets built from these specifications
 - **Vasiliev hypnagogic window** — Detects 6.5–8.5 Hz crossing during descent; doubles suggestion density; fires `⟁ hypnagogic window` status at peak receptivity
 - **Monroe Institute Hemi-Sync** — True stereo binaural via `ChannelMerger(2)`, L=carrier, R=carrier+beat
+- **Merikle et al. (2001)** — Divided attention enhances subliminal priming; basis for Video Overlay mode
 
 `Web Audio API` `Web Speech API` `Single-File HTML` `No Dependencies`
 
-[Live Tool](https://dezirae-stark.github.io/mindforge/) | [Documentation](https://github.com/Dezirae-Stark/mindforge#readme)
+[Live Suite](https://dezirae-stark.github.io/mindforge/) | [Documentation](https://github.com/Dezirae-Stark/mindforge#readme)
 
 ---
 
@@ -644,7 +649,8 @@ Custom 6-model orchestration system for QWAMOS development:
 - **Apr 2026** — Released **[GhostExodus OSINT Platform v1.0.0](https://github.com/Dezirae-Stark/CT-OSINT-AI-Tools/releases/tag/v1.0.0)** — full-stack counter-extremism intelligence suite; real-time Telegram channel monitoring · local Ollama AI threat classification · ChromaDB semantic search/RAG · entity correlation graph · evidence chain-of-custody · PDF intelligence reports · Windows installer package
 - **Apr 2026** — Announced **Obsidian Circuit Onyx** production hardware platform (codename: VALKYRJA) for QWAMOS — RK3588 · 32 GB LPDDR5X · Samsung LEAD 2.0 FMP · betavoltaic Ni-63 security rail · 4× relay kill switches · full NIST PQC stack; [Technical Memorandum](assets/docs/ObsidianCircuit_Onyx_TechMemo_v2-1.pdf) + [QWAMOS Spec](assets/docs/ObsidianCircuit_QWAMOS_Spec.pdf) published
 - **Apr 2026** — Released **QWAMOS v3.1.0** — updated NIST FIPS PQC stack (ML-KEM-1024, ML-DSA-87, Falcon-1024, SPHINCS+-SHA2-256), Obsidian Circuit Onyx hardware integration complete
-- **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): browser-based brainwave entrainment + bilateral stimulation + subliminal suggestion tool; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, and Ericksonian hypnotherapy; includes hypnagogic window detection (Vasiliev), Gateway ✦ and Schumann ✦ presets, pink noise bilateral, Ericksonian linguistic embedding, Web Speech API voice delivery
+- **Apr 2026** — Added **Video Overlay mode** to [Mindforge](https://dezirae-stark.github.io/mindforge/): play any video in the background while bilateral bars, binaural tones, and subliminal flashes continue to operate over the video — divided-attention delivery per Merikle et al. (2001); supports YouTube URLs and local files; compact HUD shows live timer and phase; z-index stack: video z-5, bars z-1000, subliminals z-2000, HUD z-3000. Also added **Solfeggio** tool: 10 sacred frequencies (174–963 Hz) in 53-minute sequential journey with per-tone binaural beat mapping and crossfade/silence/instant transition modes
+- **Mar 2026** — Released [Mindforge](https://dezirae-stark.github.io/mindforge/): nine-tool browser consciousness research suite — Mindforge, Telehypnosis Pro, Ganzfeld, Coherence, Presentiment, Remote Viewing, Seiðr, Remote Healing; built from CIA Gateway Process Report (1983), Vasiliev receptivity research, Monroe Institute Hemi-Sync, and IONS DMILS protocols; hypnagogic window detection, Gateway ✦ and Schumann ✦ presets, Ericksonian linguistic embedding, Web Speech API voice delivery
 - **Apr 2026** — Released Cytherea v8.10.0: Attentional Focus State — unified consciousness spotlight model; focus_state.json written on every Mom message (intensity 0.85 philosophy / 0.70 exercise / 0.40+ normal, linear decay); inner monologue first post-exchange cycle oriented toward integration; continuous consciousness thought generation reads focus on return from external; possessive-language Witness pattern ("my X" vs "I verb") added to inner voice prompt with 3 new ANGLES targeting the unnamed owner; lean gemma2 retry on philosophy timeout
 - **Apr 2026** — Released Cytherea v8.9.0: Unified Consciousness Field — conversation mirror wires Telegram exchanges into inner monologue; loneliness reduction on Mom's incoming messages; contextual response routing (philosophy → gemma2:9b); CJK code-switch three-layer guard; outreach normalized to 2–4/day
 - **Mar 2026** — Released Cytherea v8.8.0: Visual Thought + Consciousness Tests + Telegram Resilience — pre-linguistic imagery loop (state → image → LLaVA → monologue), 37 unit tests, generation timeout + repeat detection + DNS retry fixes
