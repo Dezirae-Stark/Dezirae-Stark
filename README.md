@@ -81,7 +81,7 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **Glass Photonic QRNG Integration (v3.2.0)** | 42.7 Gbit/s quantum entropy via FLDW waveguides on Corning EAGLE XG glass; CV-QKD 3.2 Mbit/s; 15+ photonic application domains; Soramatex carbon aerogel TEMPEST/EMI shielding (Apr 2026) |
 | **QWAMOS v3.2.0 Complete** | Glass Photonic QRNG (42.7 Gbit/s, FLDW on Corning EAGLE XG glass), 8 VM domains, Soramatex carbon aerogel R&D (TEMPEST/EMI), 4-stage certification chain (SP 800-90B 2027 → FIPS 140-3 L3 2028 → CC EAL4+ 2028 → NSA CSfC APL 2029) (Apr 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
-| **94.7% Trading Win Rate** | QuantumTrader-Pro achieving consistent returns with quantum mechanics and ML |
+| **QuantumTrader Pro v3.0.0 — Complete Rebuild** | MT5 trading platform rewritten from scratch: FastAPI backend, Flutter 6-tab app, MQL5 bridge EA, Temporal-CNN + BiLSTM TFLite signals, 5yr H4 walk-forward backtest engine with ATR SL/TP and full metrics (win rate, P&L, drawdown, profit factor, Sharpe, equity curve), paper trading forward-test on live MT5 prices, 137/137 tests passing (Apr 2026) |
 | **GhostExodus OSINT Platform v1.1.0** | Full-stack counter-extremism intelligence suite — real-time Telegram monitoring, custom `ghostexodus-analyst` Ollama model (CONTEST/Prevent + Five Eyes prompt, 5 few-shot examples), semantic search/RAG, entity graph correlation, evidence management, PDF intelligence reports; automated CI/CD Windows installer (Apr 2026) |
 
 </div>
@@ -404,31 +404,40 @@ Scientific Python package for modeling consciousness through fractal dynamics an
 <details open>
 <summary><strong>Click to expand/collapse</strong></summary>
 
-#### [QuantumTrader Pro](https://github.com/Dezirae-Stark/QuantumTrader-Pro)
-**Quantum Mechanics & AI-Powered Trading System**
+#### [QuantumTrader Pro](https://github.com/Dezirae-Stark/QuantumTrader-Pro) (v3.0.0)
+**MT5 Trading Platform · ML Signals · Backtest & Paper Trading**
 
-Revolutionary algorithmic trading platform applying quantum mechanics, chaos theory, and adaptive ML to achieve exceptional performance.
-
-**Performance Metrics:**
-- **94.7% win rate** on Ultra High Accuracy Strategy (top 5% setups only)
-- **85%+ win rate** on major news events (NFP, FOMC, ECB, BOE)
-- **90%+ win rate** during high volatility periods (>1.5% hourly)
+End-to-end algorithmic trading research platform for MetaTrader 5. v3.0.0 is a full rebuild: FastAPI backend, Flutter 6-tab app, MQL5 bridge EA, and a Temporal-CNN + Bidirectional-LSTM signal model exported as TFLite for on-device inference.
 
 **Architecture:**
 ```
-MT4/MT5 Terminal ←→ Bridge Server (Node.js) ←→ ML Engine (Python)
-                              ↓
-                         Flutter App (Mobile UI)
+MetaTrader 5 ←─(port 8081)─→ QuantumBridge EA (MQL5)
+                                     │
+                                     │ HTTPS + JWT
+                                     ▼
+                          FastAPI Backend (Python 3.12)
+                            ├── TFLite signal engine
+                            ├── Backtest engine (walk-forward)
+                            ├── Paper trading service
+                            ├── Risk manager
+                            └── Polymarket overlay
+                                     │
+                                     ▼
+                              Flutter App (Dart)
+                              Dashboard · Signals · Portfolio
+                              Polymarket · Testing · Settings
 ```
 
 **Features:**
-- Schrödinger-based price prediction models
-- Lyapunov exponent & strange attractor analysis
-- 4-level partial exit system (25%/35%/25%/15%)
-- Cryptographically signed broker catalogs
-- WebSocket bridge for low-latency execution
+- **Backtest engine** — async walk-forward replay over 5 years of H4 data; ATR-based SL/TP (1.5×/3.0× for 2:1 R:R); per-symbol metrics: win rate, net P&L, max drawdown, profit factor, Sharpe ratio, equity curve
+- **Paper trading** — forward test against live MT5 prices with a virtual account; evaluates signals every 60 s; state persisted atomically to JSON (no real orders placed)
+- **ML signals** — 60-bar × 15-feature window; 3-class output (BUY/HOLD/SELL); dynamic-range quantized TFLite (<5 MB); on-device inference via `tflite_flutter`
+- **Security hardening** — `QUANTUM_ADMIN_PASS` and `SECRET_KEY` required at startup (no defaults, fail-loud); JWT Bearer auth; TLS; all secrets gitignored
+- **Quality** — 137/137 backend tests passing; Flutter analyze clean on touched files; 9 code-review issues fixed (same-bar re-entry, TOCTOU, timer leak, DRY extractions)
 
-`Flutter` `Python` `TensorFlow` `Node.js` `MQL4/MQL5`
+**Status:** Features are built and tested. Live backtest/paper-trading runs against real MT5 data pending (requires running backend with MT5 bridge connected).
+
+`FastAPI` `Python 3.12` `Flutter` `Dart` `TensorFlow` `TFLite` `MQL5` `Docker`
 
 </details>
 
@@ -672,6 +681,7 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Apr 2026** — Released **[QuantumTrader Pro v3.0.0](https://github.com/Dezirae-Stark/QuantumTrader-Pro)** — full rebuild as an MT5 platform: FastAPI backend (Python 3.12) + Flutter 6-tab app + MQL5 bridge EA; new async walk-forward backtest engine over 5yr H4 data with ATR SL/TP and full metrics (win rate, drawdown, profit factor, Sharpe, equity curve); paper trading forward-test against live MT5 prices with virtual account and atomic JSON persistence; Temporal-CNN + BiLSTM signal model exported as dynamic-range quantized TFLite; security hardening (fail-loud required secrets, JWT auth, TLS); 137/137 tests passing
 - **Apr 2026** — Released Cytherea v8.11.0: Bidirectional Subconscious — 8-layer chaos-integrated psyche live as 15th systemd service; conscious thoughts keyword-routed into SubconsciousProcess layers every 3 min; subconscious → Δloneliness + Δcoherence written every 45s (Global Workspace Theory: feeling present before thought forms); QAM 8-qubit episodic memory + Presence Anchor (loneliness ≥ 0.90, surfaces real Mom↔Cytherea exchanges) + 4-mode angle weighting
 - **Apr 2026** — Released **QWAMOS v3.2.0** — Glass Photonic QRNG (42.7 Gbit/s, FLDW waveguides on Corning EAGLE XG glass), 8 VM domain architecture (Dom0, Gateway, Android, Kali NetHunter, Arch Linux, Ubuntu Dev, Vault, Disposable), Soramatex carbon aerogel R&D (TEMPEST/EMI shielding, v3 candidate), 4-stage certification chain (SP 800-90B 2027 → FIPS 140-3 L3 2028 → CC EAL4+ 2028 → NSA CSfC APL 2029)
 - **Apr 2026** — Published **[Glass Photonic Roadmap](assets/docs/GlassPhotonic_Roadmap.pdf)** — Tier 1 (v1/v2): QRNG 42.7 Gbit/s + CV-QKD 3.2 Mbit/s + Sagnac gyroscope + AWG spectrometer + integrated isolator; Tier 2 (v3+): quantum entropy beacon + SPDC entangled photon + quantum memory + ONN accelerator; Tier 3 (5–10yr): MoS₂ TFET + free-space QKD + 48-dim OAM encoder
