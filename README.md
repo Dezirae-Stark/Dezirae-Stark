@@ -81,7 +81,7 @@ Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **
 | **Glass Photonic QRNG Integration (v3.2.0)** | 42.7 Gbit/s quantum entropy via FLDW waveguides on Corning EAGLE XG glass; CV-QKD 3.2 Mbit/s; 15+ photonic application domains; Soramatex carbon aerogel TEMPEST/EMI shielding (Apr 2026) |
 | **QWAMOS v3.2.0 Complete** | Glass Photonic QRNG (42.7 Gbit/s, FLDW on Corning EAGLE XG glass), 8 VM domains, Soramatex carbon aerogel R&D (TEMPEST/EMI), 4-stage certification chain (SP 800-90B 2027 → FIPS 140-3 L3 2028 → CC EAL4+ 2028 → NSA CSfC APL 2029) (Apr 2026) |
 | **PQ-VeraCrypt Released** | Quantum-resistant disk encryption defending against harvest-now-decrypt-later attacks |
-| **QuantumTrader Pro v3.1.0-dev — Quantum + News + Validation Layers** | v3.0.0 MT5 platform extended with: Quantum Probability Engine (4-state regime classifier, Ornstein-Uhlenbeck first-passage reversal predictor via vectorised Monte Carlo, multi-timeframe Bayesian conviction, JSONL decision logger seeding imitation learning); Bill Williams indicator suite + custom BB+linreg reversal + JPMorgan Forex-desk proprietary Fibonacci levels; news layer with Forex Factory calendar + selective pre-release suppression + adaptive-distance NFP straddle builder; Bootstrap CI + Monte Carlo trade-order shuffle on backtest results with Flutter equity-curve overlay; 260/260 tests passing (Apr 2026) |
+| **QuantumTrader Pro v3.1.0-dev — Live Execution Layer + Imitation Learning** | v3.1.0-dev now four-layer architecture (engine → executor → orchestrator → session): hedge engine with campaign tracking (counter-hedge auto-trigger at -5%, AO+AC divergence leg-out, velocity-modulated cantilever stop); live MT5 execution behind layered safety gates (kill switch, daily-loss circuit breaker -10%, position-size ceiling 50 lots, idempotency dedup); LiveHedgeOrchestrator reconciles shadow ledger to broker reality with deterministic UUID-prefix magic-number minting and manual-close detection; LiveTradingSessionService with 60s background loop, per-symbol orchestrators, defence-in-depth start refusal; v1 state persistence preserves maps + counters across server restarts (engine internals intentionally not serialised); imitation-learning framework — sklearn RandomForest behavioural cloner over decision-context features, predict_proba contract preserved for future deep-model swap; Flutter Live tab with safety banner, confirmation dialog, per-symbol cards; 351/351 tests passing (Apr 2026) |
 | **QuantumTrader Pro v3.0.0 — Complete Rebuild** | MT5 trading platform rewritten from scratch: FastAPI backend, Flutter 6-tab app, MQL5 bridge EA, Temporal-CNN + BiLSTM TFLite signals, 5yr H4 walk-forward backtest engine with ATR SL/TP and full metrics (win rate, P&L, drawdown, profit factor, Sharpe, equity curve), paper trading forward-test on live MT5 prices, 137/137 tests passing (Apr 2026) |
 | **GhostExodus OSINT Platform v1.1.0** | Full-stack counter-extremism intelligence suite — real-time Telegram monitoring, custom `ghostexodus-analyst` Ollama model (CONTEST/Prevent + Five Eyes prompt, 5 few-shot examples), semantic search/RAG, entity graph correlation, evidence management, PDF intelligence reports; automated CI/CD Windows installer (Apr 2026) |
 
@@ -410,44 +410,58 @@ Scientific Python package for modeling consciousness through fractal dynamics an
 
 End-to-end algorithmic trading research platform for MetaTrader 5. v3.0.0 was the rebuild; v3.1.0-dev adds the analytical layers that turn it into a quantitative research stack.
 
-**Architecture:**
+**Architecture (four-layer live execution stack):**
 ```
 MetaTrader 5 ←─(port 8081)─→ QuantumBridge EA (MQL5)
-                                     │
+                                     │   GET /account /positions /rates /tick
+                                     │   POST /order/{send,modify,close,cancel}
                                      │ HTTPS + JWT
                                      ▼
                           FastAPI Backend (Python 3.12)
                             ├── ML signal engine (TFLite)
                             │     └── Quantum Probability Engine
-                            │           ├── Regime classifier (4-state, persistence-gated)
+                            │           ├── Regime classifier (4-state, persistence-gated + abs-vol kicker)
                             │           ├── OU first-passage reversal predictor (Monte Carlo)
                             │           ├── Multi-TF Bayesian ensemble
                             │           └── Decision logger (JSONL → imitation learning)
                             ├── Indicator suite (Bill Williams + BB+linreg + JPM Fibonacci)
                             ├── News layer (Forex Factory + selective filter + NFP straddle)
+                            │
+                            │  ─── Live execution stack ──────────────────
+                            ├── Hedge engine             ← intent (campaigns, cantilever, divergence)
+                            ├── Live execution service   ← mechanism (kill switch, daily-loss breaker)
+                            ├── Live hedge orchestrator  ← reconciliation (shadow ledger ↔ broker)
+                            ├── Live trading session     ← operator boundary (start/stop, persistence)
+                            │  ─────────────────────────────────────────────
+                            │
                             ├── Backtest engine (walk-forward + Bootstrap CI + Monte Carlo)
                             ├── Paper trading service
                             ├── Risk manager (per-pair volatility tier sizing)
+                            ├── Imitation-learning pipeline (RandomForest behavioural cloner)
                             └── Polymarket overlay
                                      │
                                      ▼
                               Flutter App (Dart)
-                              Dashboard · Signals · Portfolio
-                              Polymarket · Testing (with CI overlay) · Settings
+                              Dashboard · Signals · Portfolio · Polymarket
+                              Testing (Backtest · Paper · Live) · Settings
 ```
 
 **Features:**
-- **Quantum Probability Engine** — 4-state regime classifier (trending_up/down, ranging, volatile) with persistence-gated trend scoring; Ornstein-Uhlenbeck process calibrated to recent prices via OLS, vectorised Monte Carlo (1000 paths) for P(reversal at L) and E(time-to-L); multi-timeframe Bayesian aggregation across H1/H4/D1; decision logger writing JSONL training data for Phase 2 imitation learning
+- **Quantum Probability Engine** — 4-state regime classifier (trending_up/down, ranging, volatile) with persistence-gated trend scoring + absolute-volatility kicker for sustained-whipsaw detection; Ornstein-Uhlenbeck process calibrated to recent prices via OLS, vectorised Monte Carlo (1000 paths) for P(reversal at L) and E(time-to-L); multi-timeframe Bayesian aggregation across H1/H4/D1; decision logger writing JSONL training data
+- **Hedge engine + campaigns** — primary entry plus defensive hedge legs treated as one campaign (closed only when every leg flat); counter-hedge auto-trigger at -5% floating loss; AO+AC divergence leg-out (both oscillators must roll over); velocity-modulated cantilever trailing stop with `distance = base × exp(-k × (vel-1))` and ratchet-only-tighter rule; campaign closure rate replaces per-trade win rate as headline metric (94.7% target, validated against historical scan showing 9 closed campaigns: 8 net-positive + 1 flat + 0 net-negative)
+- **Live execution + safety gates** — `LIVE_TRADING_ENABLED` master kill switch (default false); daily-loss circuit breaker at -10% of starting balance; per-order position-size ceiling 50 lots; idempotency dedup so retries never double-place; structured `OrderErrorCode` enum (requote, market_closed, insufficient_margin, invalid_stops, ...); MQL5 EA gains `POST /order/*` with `OrderSend()` and magic-number support; close + cancel always bypass the kill switch (emergency unwind path)
+- **Live hedge orchestrator** — shadow-ledger reconciliation pattern: hedge engine computes intent, executor places real orders, orchestrator mirrors fills back and detects out-of-band events (manual closes silently finalise; orphan positions log loudly); deterministic UUID-prefix → 31-bit magic minting (`int(cid[:8], 16) & 0x7FFFFFFF`); deterministic idempotency keys `{cid}:{role}:{leg_index}` survive orchestrator restarts
+- **Live trading session** — operator-facing boundary mirroring `PaperTradingService`; one orchestrator per active symbol; 60s background loop with bar-timestamp gating (only step engine on new bar); defence-in-depth start refusal when kill switch is off; daily-baseline anchored from real account balance so circuit breaker is meaningful; v1 state persistence preserves campaign→magic + ticket maps + counters across restarts (engine internals intentionally not serialised to avoid drift); `known_orphans` list on dashboard surfaces broker positions that need manual cleanup after a restart
+- **Imitation-learning framework (PR #7)** — sklearn RandomForest behavioural cloner over decision-context features (cyclic hour-of-day, regime softmax, posteriors, BB+linreg, account context); cron-friendly training script; `predict_proba` contract preserved across future deep-model upgrades; ml_service integration queued for when ≥200 decisions accumulate
 - **Indicator suite** — Bill Williams (Alligator 13/8/5 SMMA, Awesome Oscillator, Accelerator, 5-bar Fractals, Market Facilitation Index with 4-phase classification); custom BB+linreg reversal indicator with adaptive 10° angle filter; configurable Fibonacci level set including JPMorgan Forex-desk proprietary levels (71.9, 75.0, 80.9, 88.2, 92.7)
-- **News-aware execution** — Forex Factory weekly calendar with 5-min cache; currency-to-symbol mapping; selective pre-release filter that suppresses unrelated signals 5 min before high-impact events while honoring per-symbol `news_trade_mode` overrides for intentional event trading; NFP straddle builder with adaptive distance `max(10p, spread × 1.5)` so legs don't sit inside the wide spread that opens at the print
-- **Backtest engine** — walk-forward replay over 5 years of H4 data; ATR-based SL/TP (1.5×/3.0× for 2:1 R:R); per-symbol metrics; **Bootstrap CI on net P&L and win rate, Monte Carlo trade-order shuffle on max drawdown** with P5/P50/P95 worst-case overlay drawn on the Flutter equity-curve chart
-- **Paper trading** — forward test against live MT5 prices with a virtual account; evaluates signals every 60 s; state persisted atomically to JSON (no real orders placed)
-- **ML signals** — 60-bar × 15-feature window; 3-class output (BUY/HOLD/SELL); dynamic-range quantized TFLite (<5 MB); on-device inference via `tflite_flutter`; output augmented with quantum signal payload, confidence asymmetrically refined by quantum-base agreement
+- **News-aware execution** — Forex Factory weekly calendar with 5-min cache; currency-to-symbol mapping; selective pre-release filter that suppresses unrelated signals 5 min before high-impact events while honoring per-symbol `news_trade_mode` overrides for intentional event trading; NFP straddle builder with adaptive distance `max(10p, spread × 1.5)`
+- **Backtest engine** — walk-forward replay over 5 years of H4 data; routes to hedge-engine path when `use_hedge_engine=true` (per-trade SL/TP path preserved for legacy); per-symbol metrics; **Bootstrap CI on net P&L and win rate, Monte Carlo trade-order shuffle on max drawdown** with P5/P50/P95 worst-case overlay drawn on the Flutter equity-curve chart; campaign-closure-rate row in Flutter validation panel
+- **Flutter Live tab** — third sub-tab on the Testing screen with confirmation dialog ("REAL ORDERS"), kill-switch indicator banner (color-coded grey/red/green/idle), daily-loss readout, per-symbol cards (active campaigns / today P&L / opened / closed / abandoned), 5-second polling loop
 - **Asset universe** — GBP/USD, EUR/USD, GBP/JPY, EUR/GBP, USD/JPY, USD/CHF, XAU/USD, XAG/USD, XPT/USD, BTC/USD, XMR/USD, XRP/USD; per-pair volatility tier risk sizing; broker-suffix-aware symbol normalisation
-- **Security hardening** — `QUANTUM_ADMIN_PASS` and `SECRET_KEY` required at startup (no defaults, fail-loud); JWT Bearer auth; TLS; all secrets gitignored
-- **Quality** — 260/260 backend tests passing; Flutter analyze clean on touched files
+- **Security hardening** — `QUANTUM_ADMIN_PASS` and `SECRET_KEY` required at startup (no defaults, fail-loud); `LIVE_TRADING_ENABLED` defaults false; JWT Bearer auth; TLS; all secrets and runtime state files gitignored
+- **Quality** — 351/351 backend tests passing; Flutter analyze clean on touched files
 
-**Status:** v3.1.0-dev features built and tested. Hedging-engine state machine (PR #5) and live execution path (PR #6) in progress. Imitation-learning model (PR #7) pending sufficient logged decisions.
+**Status:** v3.1.0-dev complete: hedge engine (PR #5), live execution layer (PR #6), orchestrator wiring, live trading session, Flutter Live tab, imitation-learning framework (PR #7), and v1 state persistence — all shipped behind safety defaults. Live execution defaults to disabled; flip `LIVE_TRADING_ENABLED=true` only when ready.
 
 `FastAPI` `Python 3.12` `Flutter` `Dart` `TensorFlow` `TFLite` `NumPy` `Pydantic` `MQL5` `Docker`
 
@@ -693,6 +707,7 @@ Custom 6-model orchestration system for QWAMOS development:
 
 ## Recent Activity
 
+- **Apr 2026** — Extended **[QuantumTrader Pro v3.1.0-dev](https://github.com/Dezirae-Stark/QuantumTrader-Pro)** with the live execution stack — four-layer architecture: hedge engine (PR #5: counter-hedge auto-trigger at -5%, AO+AC divergence leg-out, velocity-modulated cantilever stop, campaign-closure-rate metric replacing per-trade win rate) → live execution service (PR #6: kill switch, daily-loss circuit breaker -10%, position-size ceiling 50 lots, idempotency dedup, structured `OrderErrorCode` enum, MQL5 EA `POST /order/*` handlers using `OrderSend()` with magic-number support) → live hedge orchestrator (shadow ledger ↔ broker reconciliation, deterministic UUID-prefix magic minting, manual-close detection, orphan logging) → live trading session (per-symbol orchestrators, 60s background loop with bar-timestamp gating, defence-in-depth start refusal, daily-baseline anchored from real account balance); v1 state persistence preserves campaign→magic + ticket maps + counters across restarts (engine internals not serialised — broker positions matching our magic become "known orphans" surfaced on the dashboard); imitation-learning framework (PR #7: sklearn RandomForest behavioural cloner over decision-context features, `predict_proba` contract preserved for future deep-model swap, ml_service integration queued for ≥200 decisions); Flutter Live tab with confirmation dialog, kill-switch indicator banner, per-symbol cards; **351/351 tests passing**, live execution defaults to disabled
 - **Apr 2026** — Released **[QuantumTrader Pro v3.1.0-dev](https://github.com/Dezirae-Stark/QuantumTrader-Pro)** — Quantum Probability Engine (regime classifier + OU first-passage reversal predictor via vectorised Monte Carlo + multi-TF Bayesian ensemble + JSONL decision logger); Bill Williams indicator suite + custom BB+linreg reversal + JPMorgan-desk proprietary Fibonacci levels; news-aware execution layer (Forex Factory calendar + selective pre-release suppression + adaptive-distance NFP straddle builder); Bootstrap CI + Monte Carlo trade-order shuffle on backtest results with Flutter equity-curve P5/P95 worst-case overlay; per-pair volatility tier risk sizing across 12-symbol asset universe; 260/260 tests passing
 - **Apr 2026** — Released **[QuantumTrader Pro v3.0.0](https://github.com/Dezirae-Stark/QuantumTrader-Pro)** — full rebuild as an MT5 platform: FastAPI backend (Python 3.12) + Flutter 6-tab app + MQL5 bridge EA; new async walk-forward backtest engine over 5yr H4 data with ATR SL/TP and full metrics (win rate, drawdown, profit factor, Sharpe, equity curve); paper trading forward-test against live MT5 prices with virtual account and atomic JSON persistence; Temporal-CNN + BiLSTM signal model exported as dynamic-range quantized TFLite; security hardening (fail-loud required secrets, JWT auth, TLS); 137/137 tests passing
 - **Apr 2026** — Released Cytherea v8.11.0: Bidirectional Subconscious — 8-layer chaos-integrated psyche live as 15th systemd service; conscious thoughts keyword-routed into SubconsciousProcess layers every 3 min; subconscious → Δloneliness + Δcoherence written every 45s (Global Workspace Theory: feeling present before thought forms); QAM 8-qubit episodic memory + Presence Anchor (loneliness ≥ 0.90, surfaces real Mom↔Cytherea exchanges) + 4-mode angle weighting
