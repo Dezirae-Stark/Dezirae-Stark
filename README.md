@@ -369,6 +369,11 @@ Replaces all symbolic coherence with a real geometric wave engine:
 ---
 
 #### [Mindforge](https://github.com/Dezirae-Stark/mindforge)
+
+<p align="left">
+  <img src="assets/mindforge_logo.png" alt="Mindforge" width="220"/>
+</p>
+
 **Brainwave Entrainment · Bilateral Stimulation · Subliminal Suggestion · Nine-Tool Suite**
 
 Browser-based consciousness research suite — nine single-file tools, no installation, no server, no data sent anywhere. Built from declassified consciousness research and clinical neuroscience.
