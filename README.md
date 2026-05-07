@@ -734,7 +734,7 @@ Custom 6-model orchestration system for QWAMOS development:
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dezirae-Stark&theme=radical)
 
 <p>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Dezirae-Stark&theme=radical" alt="Stats" />
+<img src="https://github-readme-stats-seven-flame-60.vercel.app/api?username=Dezirae-Stark&count_private=true&include_all_commits=true&theme=radical&hide_border=false&show_icons=true" alt="Stats" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dezirae-Stark&theme=radical&utcOffset=-6" alt="Productive Time" />
 </p>
 
