@@ -2,7 +2,11 @@
 
 <img src="assets/dezirae_stark_banner.png" alt="Dezirae-Stark — Banner" width="100%" />
 
+<br>
+
 <img src="assets/Dezirae_Stark.gif" alt="Dezirae Stark" width="100%">
+
+<br>
 
 # Desirae Ann Stark
 
