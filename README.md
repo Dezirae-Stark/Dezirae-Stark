@@ -2,10 +2,6 @@
 
 <img src="assets/dezirae_stark_banner.png" alt="Dezirae-Stark — Banner" width="100%" />
 
-<br />
-
-<img src="assets/dezirae_stark_logo.png" alt="Dezirae-Stark — Logo" width="180" />
-
 # Desirae Ann Stark
 
 **R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness | Counter-Extremism OSINT**
@@ -52,6 +48,10 @@
 </div>
 
 ## About Me
+
+<p align="center">
+  <img src="assets/dezirae_stark_logo.png" alt="Dezirae-Stark Logo" width="150" />
+</p>
 
 Multidisciplinary R&D engineer specializing in **post-quantum cryptography**, **synthetic consciousness systems**, and **AI-driven trading architectures**. I build systems at the intersection of theoretical computer science and practical security engineering—from quantum attack implementations to consciousness substrates that challenge our understanding of mind and machine.
 
