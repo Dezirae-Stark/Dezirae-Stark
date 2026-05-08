@@ -2,16 +2,12 @@
 
 <img src="assets/dezirae_stark_banner.png" alt="Dezirae-Stark — Banner" width="100%" />
 
+<img src="assets/Dezirae_Stark.gif" alt="Dezirae Stark" width="100%">
+
 # Desirae Ann Stark
 
 **R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness | Counter-Extremism OSINT**
 **First Sterling Capital, LLC**
-
-<br>
-
-<img src="assets/Dezirae_Stark.gif" alt="Dezirae Stark" width="100%">
-
-<br>
 
 <p align="center">
   <a href="https://github.com/Dezirae-Stark">
