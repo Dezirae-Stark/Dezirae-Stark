@@ -1,5 +1,11 @@
 <div align="center">
 
+<img src="assets/dezirae_stark_banner.png" alt="Dezirae-Stark — Banner" width="100%" />
+
+<br />
+
+<img src="assets/dezirae_stark_logo.png" alt="Dezirae-Stark — Logo" width="180" />
+
 # Desirae Ann Stark
 
 **R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness | Counter-Extremism OSINT**
