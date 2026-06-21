@@ -903,28 +903,55 @@ Custom 6-model orchestration system for QWAMOS development:
 
 <div align="center">
 
+**Languages**
+
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?logo=rust&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnu-bash&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Assembly](https://img.shields.io/badge/Assembly-525252)
+![MQL5](https://img.shields.io/badge/MQL5-2E77BB)
+![TLA+](https://img.shields.io/badge/TLA%2B-3B5BA5)
+
+**Frameworks & Runtimes**
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+
+**Platforms & Infrastructure**
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
 ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)
-![KVM](https://img.shields.io/badge/Virtualization-KVM%2FQEMU-orange)
+![KVM/QEMU](https://img.shields.io/badge/KVM%2FQEMU-EE0000?logo=qemu&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 
+**Quantum · ML · Cryptography**
+
 ![Qiskit](https://img.shields.io/badge/Qiskit-2.2.3-purple?logo=ibm&logoColor=white)
+![PennyLane](https://img.shields.io/badge/PennyLane-2D7FF9)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
-![Cryptography](https://img.shields.io/badge/Cryptography-Post--Quantum-purple)
+![TensorFlow Lite](https://img.shields.io/badge/TensorFlow_Lite-FF6F00?logo=tensorflow&logoColor=white)
+![Post-Quantum](https://img.shields.io/badge/Cryptography-Post--Quantum-purple)
 ![Tor](https://img.shields.io/badge/Privacy-Tor%2FI2P-7D4698?logo=tor-project&logoColor=white)
 
+**AI & Local Inference**
+
+![Ollama](https://img.shields.io/badge/Ollama-000000?logo=ollama&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?logo=google&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?logo=googlegemini&logoColor=white)
 ![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-Certified-blue?logo=ibm&logoColor=white)
 
 </div>
