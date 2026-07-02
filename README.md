@@ -629,7 +629,7 @@ Takes the fringe claim — that platinum-group metals (Au, Pt, Pd, Ir, Rh, Os) d
 </p>
 
 **Falsifiability-first design:**
-- **AND-gate plausibility** — bulk superconductivity requires ALL of: inter-unit coupling, carrier/coherence, field tolerance, structural stability, and a measurable observable. The gate can only ever report **NOT RULED OUT**, never "proven."
+- **AND-gate screening** — bulk superconductivity requires ALL of: inter-unit coupling, carrier/coherence, field tolerance, structural stability, and a measurable observable. The gate can only ever report **NOT RULED OUT**, never "proven." Its output is a **screening/triage score** (a ranking of where to look next), deliberately *not* a probability.
 - **The coupling gate is decisive** — an electronically isolated monatomic unit has nowhere for a macroscopic phase to live, so it cannot host bulk superconductivity (a surviving monomer would be a model bug).
 - **Zero resistance ≠ superconductivity** — bulk Meissner flux expulsion is an independent, first-class requirement.
 - **Evidence hierarchy (0–6)** — every result is stamped; the repo caps at **Level 2–3** (computational simulation / laboratory prediction), never an experimental fact. The standard of confidence is an *independent, instrumented, reproducible observation* (ESR, SQUID, XRD, Raman, neutron scattering, calorimetry).
