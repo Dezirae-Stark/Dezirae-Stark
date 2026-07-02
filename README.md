@@ -608,6 +608,43 @@ Scientific Python package for modeling consciousness through fractal dynamics an
 
 ---
 
+### Computational Physics & Materials Research
+
+<details>
+<summary><b>ORME Lab — an open computational laboratory that translates extraordinary ORME / platinum-group-metal superconductivity claims into falsifiable, computable models. Triage, not proof.</b></summary>
+
+#### [ORME Lab](https://github.com/Dezirae-Stark/orme-lab)
+**Virtual lab for ORME/PGM high-spin superconductivity — an interactive 3D research instrument**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dezirae-Stark/orme-lab/master/web/assets/orme-lab-banner.jpg" alt="ORME Lab" width="100%" />
+</p>
+
+Takes the fringe claim — that platinum-group metals (Au, Pt, Pd, Ir, Rh, Os) driven into an "Orbitally Rearranged Monatomic Element" high-spin state exhibit ambient-temperature superconductivity — and turns it into explicit, bounded, falsifiable models. Occupies the rigorous middle ground between unquestioning belief and blanket dismissal: construct models, derive predictions, simulate, and follow the evidence wherever it leads.
+
+**Interactive 3D lab (live):** [dezirae-stark.github.io/orme-lab](https://dezirae-stark.github.io/orme-lab/) — pick element × geometry × spin state, drive magnetic field and temperature, and watch the cluster, "rice-bean" electron-density shells, coupling filaments, the superconductivity gate cascade, and the plasmon spectrum recompute in real time.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Dezirae-Stark/orme-lab/master/web/assets/lab-screenshot.jpg" alt="ORME Lab interface" width="100%" />
+</p>
+
+**Falsifiability-first design:**
+- **AND-gate plausibility** — bulk superconductivity requires ALL of: inter-unit coupling, carrier/coherence, field tolerance, structural stability, and a measurable observable. The gate can only ever report **NOT RULED OUT**, never "proven."
+- **The coupling gate is decisive** — an electronically isolated monatomic unit has nowhere for a macroscopic phase to live, so it cannot host bulk superconductivity (a surviving monomer would be a model bug).
+- **Zero resistance ≠ superconductivity** — bulk Meissner flux expulsion is an independent, first-class requirement.
+- **Evidence hierarchy (0–6)** — every result is stamped; the repo caps at **Level 2–3** (computational simulation / laboratory prediction), never an experimental fact. The standard of confidence is an *independent, instrumented, reproducible observation* (ESR, SQUID, XRD, Raman, neutron scattering, calorimetry).
+- **Lab Scientist** — an in-browser AI assistant (always-on deterministic analyst + optional live Claude via a loopback-only proxy) that reads the real scores and proposes the next decisive experiment.
+
+**Modeled hypotheses:** high-spin electron-density deformation (the "rice-bean" shape), inter-unit coupling channels, nanoclusters vs. granular Josephson networks, and the electromagnetic-coherence reframing (H12/H16 — "light flows through it" as plasmonic/polaritonic coherence, not superconductivity). Ships concrete `DFTBackend` extension points for ASE, PySCF, GPAW, ORCA, NWChem, Quantum ESPRESSO, and EPW.
+
+`Python` `Three.js` `Computational Physics` `Superconductivity` `DFT (ASE/PySCF/EPW)` `Falsifiability-First`
+
+[Repository](https://github.com/Dezirae-Stark/orme-lab) | [Live 3D Lab](https://dezirae-stark.github.io/orme-lab/) | [Charter](https://github.com/Dezirae-Stark/orme-lab/blob/master/docs/CHARTER.md)
+
+</details>
+
+---
+
 ### Trading & Financial Systems
 
 <details>
