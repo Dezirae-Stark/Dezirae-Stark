@@ -285,6 +285,22 @@ Fork of VeraCrypt implementing quantum-resistant cryptography for defense agains
 
 ---
 
+#### [OpenKeychain PQC](https://github.com/Dezirae-Stark/open-keychain-pqc) (v6.0.4-pqc.1)
+**Post-Quantum OpenPGP for Android**
+
+Fork of OpenKeychain adding a full post-quantum cryptography suite. No OpenPGP library — including upstream Bouncy Castle — had packet-level PQC support to build on, so the wire format is hand-built directly against `draft-ietf-openpgp-pqc` on top of Bouncy Castle's ML-KEM/ML-DSA/SLH-DSA primitives, wired into the app's real encrypt/decrypt/sign/verify paths and verified on a real device, not just in a test harness.
+
+- **Composite (interoperable):** ML-KEM-768/1024∥X25519/X448 encryption, ML-DSA-65/87∥Ed25519/Ed448 + SLH-DSA-SHAKE-128s signing
+- **Standalone (closed-ecosystem):** pure ML-KEM/ML-DSA, no classical component, clearly flagged as non-standard
+- Full v6-primary-key support, OpenPGP-wrapped and raw-seed key import
+- Verified against `draft-ietf-openpgp-pqc`'s own published test vectors; no external security audit yet
+
+`Java` `Android` `Bouncy Castle` `Post-Quantum Cryptography` `OpenPGP`
+
+[Design doc & full verification trail](https://github.com/Dezirae-Stark/open-keychain-pqc/blob/master/docs/superpowers/specs/2026-07-07-pqc-migration-design.md) | [Latest release](https://github.com/Dezirae-Stark/open-keychain-pqc/releases/latest)
+
+---
+
 #### [QWAMOS](https://github.com/Dezirae-Stark/QWAMOS)
 **Qubes Whonix Advanced Mobile Operating System**
 
