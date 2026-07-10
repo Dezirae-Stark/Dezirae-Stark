@@ -634,7 +634,7 @@ Scientific Python package for modeling consciousness through fractal dynamics an
 ### Computational Physics & Materials Research
 
 <details>
-<summary><b>ORME Lab — an open computational laboratory that translates extraordinary ORME / platinum-group-metal superconductivity claims into falsifiable, computable models. Triage, not proof.</b></summary>
+<summary><b>ORME Lab — an open computational laboratory that translates extraordinary ORME / platinum-group-metal superconductivity claims into falsifiable, computable models. Triage, not proof. Zero Point Energy Research — a compartmented research repository evaluating zero-point-energy, anti-gravity/field-propulsion, and adjacent frontier-science patents against primary sources.</b></summary>
 
 #### [ORME Lab](https://github.com/Dezirae-Stark/orme-lab)
 **Virtual lab for ORME/PGM high-spin superconductivity — an interactive 3D research instrument**
@@ -665,6 +665,28 @@ Takes the fringe claim — that platinum-group metals (Au, Pt, Pd, Ir, Rh, Os) d
 `Python` `Three.js` `Computational Physics` `Superconductivity` `DFT (ASE/PySCF/EPW)` `Falsifiability-First`
 
 [Repository](https://github.com/Dezirae-Stark/orme-lab) | [Live 3D Lab](https://dezirae-stark.github.io/orme-lab/) | [Charter](https://github.com/Dezirae-Stark/orme-lab/blob/master/docs/CHARTER.md)
+
+---
+
+#### Zero Point Energy Research
+
+<p align="left">
+  <img src="assets/zero_point_energy_logo.png" alt="Zero Point Energy Research" width="220"/>
+</p>
+
+**Evaluate · Engineer · Measure · Discover**
+
+A private, compartmented research repository (Obsidian Circuit, LLC) that takes zero-point-energy, anti-gravity/field-propulsion, and adjacent frontier-science patents and puts them through the same discipline every time: preserve the primary source faithfully, extract the technical content on its own terms, separate what's independently verifiable from what's merely asserted, and — where a claim is concrete enough — engineer and measure it rather than restate it.
+
+**Compartmented, not siloed:** each source (a patent, a patent family, a research thread) gets its own self-contained compartment — source material, digest, and where applicable schematics, mechanical parts, and a validation protocol — but compartments share a common methodology layer and cross-link explicitly (including across repositories) whenever one informs another, rather than duplicating work or drifting apart silently.
+
+**Current compartments span:** Bedini-Bearden battery-pulsing "radiant energy" claims (taken through schematic redesign, 3D-printable mechanical parts, and a golden-unit/ensemble/SPC validation protocol); the historical anti-gravity/field-propulsion literature — Biefeld-Brown electrogravitics, NASA Eagleworks' EmDrive, the Woodward Mach-effect thruster, Podkletnov's rotating-superconductor gravity-shielding claims, and the Navy's Pais patents — each resolved against primary sources and peer-reviewed replication attempts rather than secondhand summary; and adjacent frontier-science domains (a dream-state neural-interface patent family, a wider ear-worn/implantable neurotechnology hardware landscape) explicitly labeled with their own correct scientific branch rather than folded into the zero-point-energy frame.
+
+**Working discipline:** every citation is checked against a primary source and graded by fetch-confidence; every uncorroborated claim is flagged, never smoothed over; and every compartment's validation protocol is designed to apply real measurement and accounting to whatever is buildable, rather than accept a source's own figures at face value.
+
+`Patent Analysis` `Falsifiability-First` `Primary-Source Verification` `Schematic & Mechanical Design` `Validation Methodology`
+
+*Private repository — Obsidian Circuit, LLC*
 
 </details>
 
