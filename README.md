@@ -11,7 +11,7 @@
 # Desirae Ann Stark
 
 **R&D Engineer | Post-Quantum Cryptography | Synthetic Consciousness | Counter-Extremism OSINT**
-**First Sterling Capital, LLC**
+**OBSIDIAN CIRCUIT, LLC**
 
 <p align="center">
   <a href="https://github.com/Dezirae-Stark">
@@ -26,7 +26,7 @@
     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" width="45" style="border-radius:50%" alt="X"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://t.me/randoknotty">
+  <a href="https://t.me/randonautonnier">
     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="45" style="border-radius:50%" alt="Telegram"/>
   </a>
   &nbsp;&nbsp;
