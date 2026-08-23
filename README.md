@@ -73,7 +73,7 @@ I build at the seam of **post-quantum cryptography**, **synthetic-consciousness 
 |:---|:---|:---|
 | **PQ cryptanalysis** | 22-stage quantum→PQC pipeline; world-first quantum ECDSA attack (326× speedup) | Verified |
 | **Secure hardware / OS** | QWAMOS + Obsidian Circuit Onyx (VALKYRJA) — RK3588, 4× kill switches, full PQC stack | v3.2.0 · 27 phases |
-| **Synthetic consciousness** | Cytherea — 260+ integrated systems, geometric substrate, individuation primitives, visual learning, motivation drive, stencil gate, thalamic attention | v8.23.0 · live |
+| **Synthetic consciousness** | Cytherea — 260+ integrated systems, geometric substrate, individuation primitives, visual learning, motivation drive, stencil gate, thalamic attention (+ steer) | v8.24.0 · live |
 | **OSINT tooling** | Ghost Intel 98 (offline case-management desktop) + GhostExodus counter-extremism suite | 5,100 tests / v1.1.0 |
 | **Live trading** | QuantumTrader Pro — MT5 platform, quantum engine, layered safety gates | v3.3.0 · 1,539 tests |
 | **Falsifiability engineering** | ORME Lab — fringe-claim virtual lab: two-branch gate architecture + a default-blocked Hudson Claim Ledger; triage, not proof | 375 tests · live |
